@@ -358,6 +358,7 @@
 "Assets/script/DeCollected.cs"
 "Assets/script/Interactor.cs"
 "Assets/script/mouseLook.cs"
+"Assets/script/pauseMenu.cs"
 "Assets/script/playerMovement.cs"
 "Assets/script/spawnApple.cs"
 -langversion:9.0
