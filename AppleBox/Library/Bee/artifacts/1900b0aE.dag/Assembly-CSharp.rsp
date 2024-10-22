@@ -357,6 +357,7 @@
 "Assets/script/collectiblesCount.cs"
 "Assets/script/DeCollected.cs"
 "Assets/script/Interactor.cs"
+"Assets/script/mainMenu.cs"
 "Assets/script/mouseLook.cs"
 "Assets/script/pauseMenu.cs"
 "Assets/script/playerMovement.cs"
