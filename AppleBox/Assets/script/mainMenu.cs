@@ -20,11 +20,14 @@ public class mainMenu : MonoBehaviour
     public void newGame()
     {
         SceneManager.LoadScene("Livello1");
+        PlayerPrefs.SetInt("PlayerLevel", 1);
+        gameHandler.Plevel = 1;
     }
 
     public void riprendi()
     {
-        //devo ricordarmi come si fa
+        PlayerPrefs.GetInt("PlayerLevel");
+        SceneManager.LoadScene("Livello" + gameHandler.Plevel);
     }
 
     public void settings()
