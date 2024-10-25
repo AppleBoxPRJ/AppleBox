@@ -23,7 +23,7 @@ public class Interactor : MonoBehaviour
     void Update()
     {
         //controlla se viene premuto E
-        if (Input.GetKeyDown("e"))
+        if (Input.GetMouseButtonDown(0))
         {
             //se la condizione viene confermata crea un ray che viaggia in avanti fino al massimo range
             Ray r = new Ray(InteractionSource.position, InteractionSource.forward);

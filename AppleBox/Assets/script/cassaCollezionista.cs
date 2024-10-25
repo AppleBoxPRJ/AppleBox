@@ -34,7 +34,7 @@ public class cassaCollezionista : MonoBehaviour
         count = collectiblesCount.passaggioDiLivello;
         if (playerInTrigger == true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown("e"))
             {
                 //Debug.Log("Fino a qui ci arriviamo");
                 DeCollected?.Invoke();

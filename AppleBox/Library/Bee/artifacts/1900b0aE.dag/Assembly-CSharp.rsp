@@ -364,7 +364,7 @@
 "Assets/script/pauseMenu.cs"
 "Assets/script/playerMovement.cs"
 "Assets/script/spawnApple.cs"
-"Assets/walkIntoTheUnknown.cs"
+"Assets/script/walkIntoTheUnknown.cs"
 -langversion:9.0
 /deterministic
 /optimize+
