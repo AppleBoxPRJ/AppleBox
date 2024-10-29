@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 6043715177439049595}
   - component: {fileID: 2434671549854871363}
   - component: {fileID: 6708462643142880504}
+  - component: {fileID: 3301359361425246847}
   m_Layer: 0
   m_Name: Icosphere
   m_TagString: Untagged
@@ -143,3 +144,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3301359361425246847
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4157654625480208616}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 289301614986012343, guid: a995fb46e31af2c40ae56191e2695d86, type: 3}
