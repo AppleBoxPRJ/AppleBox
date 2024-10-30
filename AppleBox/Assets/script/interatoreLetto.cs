@@ -28,7 +28,7 @@ public class interatoreLetto : MonoBehaviour
     {
         if (playerInTrigger == true)
         {
-            if (Input.GetKeyDown("f"))
+            if (Input.GetKeyDown("e"))
             {
                 PlayerPrefs.SetInt("PlayerLevel", gameHandler.Plevel + 1);
                 gameHandler.Plevel = gameHandler.Plevel + 1;

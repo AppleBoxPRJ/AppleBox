@@ -33,9 +33,13 @@ public class interactionDoor : MonoBehaviour
             {
                 text.SetActive(false);
                 text2.SetActive(true);
-                porta_aperta.SetActive(true);
-                porta.SetActive(false);
+                apriPorta();
             }
+        }
+
+        if(cassaCollezionista.count == 5)
+        {
+            apriPorta();
         }
     }
 
@@ -53,8 +57,16 @@ public class interactionDoor : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            playerInTrigger=false;
             text.SetActive(false);
             text2.SetActive(false);
         }
+    }
+
+    public void apriPorta()
+    {
+        porta_aperta.SetActive(true);
+        porta.SetActive(false);
+        playerInTrigger = false;
     }
 }

@@ -2,20 +2,23 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class cassaCollezionista : MonoBehaviour
 {
     public static event Action DeCollected;
     //public GameObject muro;
-    [SerializeField] int count;
-    bool playerInTrigger;
+    public static int count;
+    public bool playerInTrigger;
+    public GameObject text;
 
 
     //all'inizio dell'esecuzione nasconde il testo
     public void Start()
     {
         playerInTrigger = false;
+        text.SetActive(false);
     }
 
     //quando entra il trigger mostra la scritta
@@ -29,6 +32,14 @@ public class cassaCollezionista : MonoBehaviour
         }
     }
 
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInTrigger = false;
+        }
+    }
+
     public void Update()
     {
         count = collectiblesCount.passaggioDiLivello;
@@ -36,22 +47,21 @@ public class cassaCollezionista : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                //Debug.Log("Fino a qui ci arriviamo");
+                
                 DeCollected?.Invoke();
             }
 
             if (count == 5)
             {
-                //Debug.Log("Apriamo la porta alla zona successiva");
+                text.gameObject.SetActive(true);
             }
+            
+        } 
+        else
+        {
+            text.SetActive (false);
         }
+
+        //text.gameObject.SetActive(false);
     }
-    //quando esce dal trigger nasconde la scritta
-    //public void OnTriggerExit(Collider other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        //image.SetActive(false);
-    //    }
-    //}
 }
