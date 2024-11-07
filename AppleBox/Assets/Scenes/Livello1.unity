@@ -4887,6 +4887,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1698853192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698853194}
+  - component: {fileID: 1698853193}
+  - component: {fileID: 1698853195}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1698853193
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698853192}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.18, y: 4.16, z: 3.05}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1698853194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698853192}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -166.57, y: 2.261, z: 18.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1698853195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698853192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172a599d09bdf314994457e18b07a57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInTrigger: 0
+  text: {fileID: 518843752}
+  collisore: {fileID: 1698853192}
 --- !u!1 &1715772694
 GameObject:
   m_ObjectHideFlags: 0
@@ -5131,7 +5200,7 @@ MonoBehaviour:
   porta: {fileID: 1865077126}
   porta_aperta: {fileID: 1451474088}
   text: {fileID: 642893191}
-  text2: {fileID: 518843752}
+  collider2: {fileID: 1698853192}
   counter: 0
   playerInTrigger: 0
 --- !u!65 &1865077129
@@ -5967,3 +6036,4 @@ SceneRoots:
   - {fileID: 836751289}
   - {fileID: 1978070699}
   - {fileID: 1372221174}
+  - {fileID: 1698853194}

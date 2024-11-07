@@ -8,19 +8,23 @@ public class interactionDoor : MonoBehaviour
     public GameObject porta;
     public GameObject porta_aperta;
     public GameObject text;
-    public GameObject text2;
+    //public GameObject text2;
+    public GameObject collider2;
     public int counter;
     public bool playerInTrigger;
     // Start is called before the first frame update
     void Start()
     {
         text.SetActive(false);
-        text2.SetActive(false);
+        //text2.SetActive(false);
         porta.SetActive(true);
         porta_aperta.SetActive(false);
         playerInTrigger = false;
         counter = 0;
+        collider2.SetActive(false);
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -32,10 +36,17 @@ public class interactionDoor : MonoBehaviour
             if (counter == 4)
             {
                 text.SetActive(false);
-                text2.SetActive(true);
+                collider2.SetActive(true);
+                //text2.SetActive(true);
                 apriPorta();
+                
+
             }
+
+
         }
+        
+
 
         if(cassaCollezionista.count == 5)
         {
@@ -59,7 +70,7 @@ public class interactionDoor : MonoBehaviour
         {
             playerInTrigger=false;
             text.SetActive(false);
-            text2.SetActive(false);
+            //text2.SetActive(false);
         }
     }
 

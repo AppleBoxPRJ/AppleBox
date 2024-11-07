@@ -9,8 +9,12 @@ public class pauseMenu : MonoBehaviour
     public GameObject pauseMenuPrefab;
     public GameObject otherCanva;
     bool pause;
-    // Start is called before the first frame update
-    void Start()
+
+
+
+
+        // Start is called before the first frame update
+        void Start()
     {
         PausaOff();
     }
