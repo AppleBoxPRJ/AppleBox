@@ -10,7 +10,6 @@ public class pauseMenu : MonoBehaviour
     public GameObject pauseMenuPrefab;
     public GameObject otherCanva;
     bool pause;
-    public GameObject messaggioIniziale;
 
 
 
@@ -27,12 +26,6 @@ public class pauseMenu : MonoBehaviour
         {
             //Debug.Log("lo leggo");
             PausaOn();
-        }
-
-        if (Input.GetKeyDown("e"))
-        {
-            messaggioIniziale.SetActive(false);
-            Time.timeScale = 1f;
         }
     }
 
