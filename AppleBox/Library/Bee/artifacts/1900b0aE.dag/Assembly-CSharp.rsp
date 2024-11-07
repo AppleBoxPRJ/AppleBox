@@ -365,8 +365,8 @@
 "Assets/script/pauseMenu.cs"
 "Assets/script/playerMovement.cs"
 "Assets/script/spawnApple.cs"
+"Assets/script/testoDaScomparire.cs"
 "Assets/script/walkIntoTheUnknown.cs"
-"Assets/testoDaScomparire.cs"
 -langversion:9.0
 /deterministic
 /optimize+
