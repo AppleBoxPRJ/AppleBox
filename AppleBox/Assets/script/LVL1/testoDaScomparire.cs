@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class testoDaScomparire : MonoBehaviour
 {
-    public bool playerInTrigger;
+    public static bool playerInTrigger;
     public GameObject text;
     public GameObject collisore;
     public GameObject messaggioIniziale;
@@ -13,25 +14,15 @@ public class testoDaScomparire : MonoBehaviour
     void Start()
     {
         text.SetActive(false);
-        if (pausa)
-        {
-            Time.timeScale = 0;
-        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(playerInTrigger == true)
+        if (playerInTrigger == true)
         {
             text.SetActive(true);
-        }
-
-
-        if (pausa == true && Input.GetKeyDown("e"))
-        {
-            messaggioIniziale.SetActive(false);
-            Time.timeScale = 1f;
         }
     }
 

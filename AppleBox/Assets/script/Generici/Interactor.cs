@@ -16,7 +16,7 @@ public class Interactor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InteractionRange = 3f;
     }
 
     // Update is called once per frame
@@ -36,6 +36,11 @@ public class Interactor : MonoBehaviour
                     counterMele++;
                 }
             }
+        }
+
+        if(testoDaScomparire.playerInTrigger == true)
+        {
+            InteractionRange = 0f;
         }
     }
 }

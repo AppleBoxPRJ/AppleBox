@@ -5011,7 +5011,7 @@ GameObject:
   - component: {fileID: 1698853193}
   - component: {fileID: 1698853195}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: collisionePortaAperta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5065,10 +5065,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172a599d09bdf314994457e18b07a57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInTrigger: 0
   text: {fileID: 518843752}
   collisore: {fileID: 1698853192}
-  messaggioIniziale: {fileID: 0}
+  messaggioIniziale: {fileID: 1764434412}
   pausa: 1
 --- !u!1 &1715772694
 GameObject:
@@ -5393,6 +5392,7 @@ MonoBehaviour:
   collider2: {fileID: 1698853192}
   counter: 0
   playerInTrigger: 0
+  messaggioIniziale: {fileID: 1764434412}
 --- !u!65 &1865077129
 BoxCollider:
   m_ObjectHideFlags: 0
