@@ -5069,37 +5069,6 @@ MonoBehaviour:
   collisore: {fileID: 1698853192}
   messaggioIniziale: {fileID: 1764434412}
   pausa: 1
---- !u!1 &1715772694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1715772695}
-  m_Layer: 0
-  m_Name: cacca(DA TOGLIERE)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1715772695
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715772694}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -126.9097, y: 0, z: 13.0694275}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1721832970 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b93298fc2925ab2479efeccebec013d8, type: 3}
@@ -6216,7 +6185,6 @@ SceneRoots:
   - {fileID: 286798505}
   - {fileID: 823784738}
   - {fileID: 1164969007}
-  - {fileID: 1715772695}
   - {fileID: 772670703}
   - {fileID: 1409441699}
   - {fileID: 1156001727}
