@@ -851,7 +851,7 @@ MonoBehaviour:
     m_ActionId: 1fde48c7-951b-4fb1-8d41-83eed3b2a1cc
     m_ActionName: Movements/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: KeyBoard
   m_DefaultActionMap: Movements
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
