@@ -8,7 +8,7 @@ public class interatoreLetto : MonoBehaviour
 {
     bool playerInTrigger;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         playerInTrigger = false;
         Debug.Log(gameHandler.Plevel);
@@ -24,7 +24,7 @@ public class interatoreLetto : MonoBehaviour
         }
     }
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (playerInTrigger == true)
         {
