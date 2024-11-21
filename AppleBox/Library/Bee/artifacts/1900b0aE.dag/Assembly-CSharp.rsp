@@ -358,6 +358,7 @@
 "Assets/PlayerInput/Controls.cs"
 "Assets/script/Generici/collectApple.cs"
 "Assets/script/Generici/collectiblesCount.cs"
+"Assets/script/Generici/counterPomo.cs"
 "Assets/script/Generici/DeCollected.cs"
 "Assets/script/Generici/gameHandler.cs"
 "Assets/script/Generici/Interactor.cs"
