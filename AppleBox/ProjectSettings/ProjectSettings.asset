@@ -754,11 +754,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1eb7c4f9-d0fc-472d-bc88-4fbfa0f8fc67
+  cloudProjectId: dc6c6b0a-7891-4d4e-ab63-f689b446ac5f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: AppleBox
-  organizationId: leverdrai
+  organizationId: shabalako69
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
