@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5622d930b0a585d46832b9178a4e5aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  melaPrefab: {fileID: 6842786758143072853, guid: 89666cb5b1b354a4aa28826f529dfc70, type: 3}
+  melaPrefab: {fileID: 1722631530216219230, guid: e40d8d72ab776064ebe236fc96fca05b, type: 3}
   asseY: -0.25
 --- !u!1 &334441688
 GameObject:
