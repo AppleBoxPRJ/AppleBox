@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.32f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/ICTS23-25.230/Documents/UnityPRJ/AppleBox/AppleBox/AppleBox
+C:/Users/ICTS23-25.149/Documents/GitHub/AppleBox/AppleBox
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-65015
-Successfully changed project path to: C:/Users/ICTS23-25.230/Documents/UnityPRJ/AppleBox/AppleBox/AppleBox
-C:/Users/ICTS23-25.230/Documents/UnityPRJ/AppleBox/AppleBox/AppleBox
+52610
+Successfully changed project path to: C:/Users/ICTS23-25.149/Documents/GitHub/AppleBox/AppleBox
+C:/Users/ICTS23-25.149/Documents/GitHub/AppleBox/AppleBox
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,16 +49,16 @@ C:/Users/ICTS23-25.230/Documents/UnityPRJ/AppleBox/AppleBox/AppleBox
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [7416] Host "[IP] 172.20.213.157 [Port] 0 [Flags] 2 [Guid] 14918970 [EditorId] 14918970 [Version] 1048832 [Id] WindowsEditor(7,WSA15-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [38488] Host "[IP] 172.20.213.160 [Port] 0 [Flags] 2 [Guid] 3234404135 [EditorId] 3234404135 [Version] 1048832 [Id] WindowsEditor(7,WSA15-09) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [7416] Host "[IP] 172.20.213.157 [Port] 0 [Flags] 2 [Guid] 14918970 [EditorId] 14918970 [Version] 1048832 [Id] WindowsEditor(7,WSA15-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [38488] Host "[IP] 172.20.213.160 [Port] 0 [Flags] 2 [Guid] 3234404135 [EditorId] 3234404135 [Version] 1048832 [Id] WindowsEditor(7,WSA15-09) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-Refreshing native plugins compatible for Editor in 5.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.32f1 (c8300dc0a3fa)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/ICTS23-25.230/Documents/UnityPRJ/AppleBox/AppleBox/AppleBox/Assets
+[Subsystems] Discovering subsystems at path C:/Users/ICTS23-25.149/Documents/GitHub/AppleBox/AppleBox/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.32f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004723 seconds.
-- Loaded All Assemblies, in  0.217 seconds
+Registered in 0.003723 seconds.
+- Loaded All Assemblies, in  0.196 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.162 seconds
-Domain Reload Profiling: 378ms
-	BeginReloadAssembly (71ms)
+- Finished resetting the current domain, in  0.153 seconds
+Domain Reload Profiling: 349ms
+	BeginReloadAssembly (62ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (20ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (19ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (84ms)
-		LoadAssemblies (69ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (77ms)
+		LoadAssemblies (60ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (82ms)
-			TypeCache.Refresh (82ms)
-				TypeCache.ScanAssembly (73ms)
+		AnalyzeDomain (76ms)
+			TypeCache.Refresh (75ms)
+				TypeCache.ScanAssembly (67ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (162ms)
+	FinalizeReload (154ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (128ms)
+		SetupLoadedEditorAssemblies (121ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (86ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
+			ProcessInitializeOnLoadAttributes (82ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,109 +115,109 @@ Domain Reload Profiling: 378ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file data-000001BB13CE5E20 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000001711892DE20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13EF5B30 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file data-00000170F6400070 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13CE5E20 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-000001711858C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13EF5B30 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file data-00000170F6400070 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13D0FC90 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13CE5E20 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file data-000001711892DE20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13BBF820 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file data-0000017118B76020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13BC6230 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13F45010 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000017118B76020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF2082120 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-00000171187FF640 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13BC6230 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-0000017118B76020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13D6C010 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017118B76020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF2311E20 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13BD0640 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13BD0640 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF2311E20 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000001711920D2B0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13880080 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000017117DF8560 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13880080 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file data-0000017117DF8560 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF2311E20 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000017117E30F70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13F87830 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000017117E30F70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13880080 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file data-0000017118A5E030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13F9A040 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000017117E30F70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13FA1E50 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB13FA1E50 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-00000170F6404880 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB138D34B0 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-00000170F65000C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB14756020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file data-000001711800E010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB142C0020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file data-000001711800E010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.395 seconds
-Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.367 seconds
+Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.506 seconds
-Domain Reload Profiling: 900ms
-	BeginReloadAssembly (90ms)
+- Finished resetting the current domain, in  0.392 seconds
+Domain Reload Profiling: 758ms
+	BeginReloadAssembly (84ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (12ms)
-	RebuildCommonClasses (23ms)
+	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (249ms)
-		LoadAssemblies (193ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (231ms)
+		LoadAssemblies (173ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (110ms)
-			TypeCache.Refresh (95ms)
-				TypeCache.ScanAssembly (86ms)
+		AnalyzeDomain (106ms)
+			TypeCache.Refresh (92ms)
+				TypeCache.ScanAssembly (82ms)
 			ScanForSourceGeneratedMonoScriptInfo (10ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (506ms)
+	FinalizeReload (392ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (423ms)
+		SetupLoadedEditorAssemblies (301ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
+			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (35ms)
-			ProcessInitializeOnLoadAttributes (366ms)
-			ProcessInitializeOnLoadMethodAttributes (12ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (245ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3503 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (58.5 KB). Loaded Objects now: 3986.
-Memory consumption went from 143.1 MB to 143.1 MB.
-Total: 2.522400 ms (FindLiveObjects: 0.164000 ms CreateObjectMapping: 0.047400 ms MarkObjects: 2.216900 ms  DeleteObjects: 0.092800 ms)
+Unloading 40 unused Assets / (58.9 KB). Loaded Objects now: 3986.
+Memory consumption went from 143.2 MB to 143.2 MB.
+Total: 2.186600 ms (FindLiveObjects: 0.137700 ms CreateObjectMapping: 0.040700 ms MarkObjects: 1.929500 ms  DeleteObjects: 0.078000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -234,132 +234,109 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 89935.664656 seconds.
-  path: Assets/FBX
-  artifactKey: Guid(4386534241de2b94a977bfc5022aa733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX using Guid(4386534241de2b94a977bfc5022aa733) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '92ca7e19d2845302b8a0235bf2a7e8f5') in 0.002608 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/FBX/apple_box.fbx
-  artifactKey: Guid(b93298fc2925ab2479efeccebec013d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FBX/apple_box.fbx using Guid(b93298fc2925ab2479efeccebec013d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
- -> (artifact id: '06260637c7ae31a3f959847f151bcfce') in 0.117611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 20
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Symbol file data-000001BAF202B840 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF1964020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file data-0000017119A19010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF1F6B010 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-00000170F6346010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF1964020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file data-0000017119A19010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB144E1E50 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file data-0000017119C5F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1D9A7020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file data-0000017122E02460 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF1B8F050 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file data-00000171237F1020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB156FD020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file data-000001711812B470 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1D617020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file data-0000017118312020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF20BF010 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-00000170F5EBB730 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB156FD020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-00000170B2CB6690 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF20DBFF0 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-0000017118B76020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1EDF6DE0 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file data-00000170F66C5E20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB15376A30 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file data-00000170F66C5E20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1DD19A50 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-00000170F66C5E20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF1B8F050 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-00000171237F1020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1F029030 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000017122CA7010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1F029030 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file data-0000017122CA7010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB15971010 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1EDF6DE0 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-000001711A0FD030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BAF2040D10 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file data-0000017122168010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1EDF6DE0 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file data-0000017119954010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1F061A40 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file data-000001711812B470 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1F061A40 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-000001711812B470 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1D9A7020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file data-00000170F6444D10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1D955020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file data-000001712377D010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001BB1D9A7020 doesn't match image C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file data-00000171183BE860 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.283 seconds
-Refreshing native plugins compatible for Editor in 2.60 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.278 seconds
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.766 seconds
-Domain Reload Profiling: 1047ms
-	BeginReloadAssembly (104ms)
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 803ms
+	BeginReloadAssembly (98ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (2ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (24ms)
+		CreateAndSetChildDomain (22ms)
 	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (134ms)
-		LoadAssemblies (179ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (168ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (9ms)
-			TypeCache.Refresh (5ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (766ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (527ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (438ms)
+		SetupLoadedEditorAssemblies (267ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (40ms)
-			ProcessInitializeOnLoadAttributes (376ms)
+			BeforeProcessingInitializeOnLoad (33ms)
+			ProcessInitializeOnLoadAttributes (212ms)
 			ProcessInitializeOnLoadMethodAttributes (11ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 2.49 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3482 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (31.3 KB). Loaded Objects now: 4001.
-Memory consumption went from 143.4 MB to 143.4 MB.
-Total: 2.307700 ms (FindLiveObjects: 0.165900 ms CreateObjectMapping: 0.048700 ms MarkObjects: 2.057500 ms  DeleteObjects: 0.034800 ms)
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.4 KB). Loaded Objects now: 3989.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.146800 ms (FindLiveObjects: 0.148000 ms CreateObjectMapping: 0.047500 ms MarkObjects: 1.914100 ms  DeleteObjects: 0.036400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -376,8 +353,1683 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: Operazione di I/O terminata a causa dell'uscita dal thread oppure della richiesta di un'applicazione.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F625F020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119858020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119959C20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F625F020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166836030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171247E3010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170B2CB6690 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171193C4020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711868C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170B2CB6690 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66C5E20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66C5E20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6265A30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118104020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017121F1C030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122CFB010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122CFB010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122CFB010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122CFB010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6444D10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5ECC950 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166836030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.267 seconds
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.619 seconds
+Domain Reload Profiling: 884ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (166ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (334ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (42ms)
+			ProcessInitializeOnLoadAttributes (268ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 3992.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.240900 ms (FindLiveObjects: 0.158000 ms CreateObjectMapping: 0.055100 ms MarkObjects: 1.981700 ms  DeleteObjects: 0.045600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672B44E0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171249AD010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119F31CC0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672B44E0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171188B2010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118347830 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124A1F020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711A0CB020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66C5E20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672B44E0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672B44E0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118198080 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167146020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122CFB010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6007C80 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F60A0020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118347830 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118347830 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017121F1C030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171197E6010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.277 seconds
+Refreshing native plugins compatible for Editor in 2.79 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.548 seconds
+Domain Reload Profiling: 823ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (548ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (275ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (217ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3995.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 1.979500 ms (FindLiveObjects: 0.159600 ms CreateObjectMapping: 0.049000 ms MarkObjects: 1.731400 ms  DeleteObjects: 0.038800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F656DEC0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171671E4020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119F31CC0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F656DEC0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124C9F070 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118104020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167C838D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166964FE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166943E50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F2F060 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167C838D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167C838D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118104020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711A067010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711A0FD030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122CFB010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167C838D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167C838D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171182A6010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124C9F070 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.275 seconds
+Refreshing native plugins compatible for Editor in 4.52 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.686 seconds
+Domain Reload Profiling: 959ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (135ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (686ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (378ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (300ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 5.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 3998.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 3.529700 ms (FindLiveObjects: 0.305700 ms CreateObjectMapping: 0.105800 ms MarkObjects: 3.058800 ms  DeleteObjects: 0.058500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171249AD010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EDE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171234A5050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6498020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711A0FD030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118A5E030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119E8A020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712292AA80 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6498020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711820F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712292AA80 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171689B1CE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171234A5050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.280 seconds
+Refreshing native plugins compatible for Editor in 3.77 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.826 seconds
+Domain Reload Profiling: 1104ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (133ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (826ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (382ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (299ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 4001.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 3.031300 ms (FindLiveObjects: 0.134200 ms CreateObjectMapping: 0.066100 ms MarkObjects: 2.778500 ms  DeleteObjects: 0.051700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119F5C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171249AD010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124933F10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119268010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122947010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118A5E030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017168987A40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711866BEB0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117E3BFB0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119F5C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166943E50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118746020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711866BEB0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66CF660 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119268010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.283 seconds
+Refreshing native plugins compatible for Editor in 2.05 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.711 seconds
+Domain Reload Profiling: 992ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (145ms)
+		LoadAssemblies (181ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (711ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 5.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.3 KB). Loaded Objects now: 4004.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 3.213800 ms (FindLiveObjects: 0.262300 ms CreateObjectMapping: 0.054800 ms MarkObjects: 2.838600 ms  DeleteObjects: 0.057200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124933F10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716992A020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124933F10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119268010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122947010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A13FE40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167352020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A2286B0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124933F10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166AD7CF0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017168BB6010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A1A4FE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017119268010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.281 seconds
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.559 seconds
+Domain Reload Profiling: 838ms
+	BeginReloadAssembly (96ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (143ms)
+		LoadAssemblies (174ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (559ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (273ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (34ms)
+			ProcessInitializeOnLoadAttributes (217ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 4008.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 1.967500 ms (FindLiveObjects: 0.155100 ms CreateObjectMapping: 0.046500 ms MarkObjects: 1.731200 ms  DeleteObjects: 0.033700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716677A500 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171249AD010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716677A500 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716992A020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166AD7CF0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A13FE40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711820F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170B29FBF30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171188B4030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6263030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166AD7CF0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712240C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A232CE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66CF660 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716992A020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.401 seconds
+Refreshing native plugins compatible for Editor in 4.71 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.664 seconds
+Domain Reload Profiling: 1057ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (215ms)
+		LoadAssemblies (249ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (12ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (664ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (333ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (270ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 4.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 4011.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 3.429600 ms (FindLiveObjects: 0.303400 ms CreateObjectMapping: 0.094400 ms MarkObjects: 2.958600 ms  DeleteObjects: 0.071900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716802FFE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171249AD010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716802FFE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716938C060 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017169F580F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124B1EC70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A13FE40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166A95E00 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716892DAC0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716802FFE0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F5EED250 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017169F580F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A317020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716B390080 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124B1EC70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124B1EC70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A293D20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716938C060 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.265 seconds
+Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.617 seconds
+Domain Reload Profiling: 881ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (129ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (617ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (328ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (262ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 2.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 4014.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.153800 ms (FindLiveObjects: 0.146900 ms CreateObjectMapping: 0.054900 ms MarkObjects: 1.916300 ms  DeleteObjects: 0.035000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A5A6C30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F6723020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716C6DE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A5A6C30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712240C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A3C6FB0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171248E7EF0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A13FE40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118767F40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A5A6C30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A5A6C30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A3C6FB0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716B390080 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171667029C0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171248E7EF0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171248E7EF0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716B390080 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712240C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.282 seconds
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.572 seconds
+Domain Reload Profiling: 853ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (168ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (20ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (573ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (272ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (34ms)
+			ProcessInitializeOnLoadAttributes (217ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 4017.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.492200 ms (FindLiveObjects: 0.151500 ms CreateObjectMapping: 0.054400 ms MarkObjects: 2.234500 ms  DeleteObjects: 0.051100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124933F10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66CF660 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124933F10 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123D8AD50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017169F580F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F60A0020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A13FE40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118312020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A1FD060 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F60A0020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017169F580F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A4A5020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A1FD060 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F03020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F03020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716CF43010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123D8AD50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.286 seconds
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.525 seconds
+Domain Reload Profiling: 810ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (18ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (7ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (526ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (267ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (33ms)
+			ProcessInitializeOnLoadAttributes (212ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.2 KB). Loaded Objects now: 4020.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 1.984500 ms (FindLiveObjects: 0.156200 ms CreateObjectMapping: 0.048300 ms MarkObjects: 1.744500 ms  DeleteObjects: 0.033900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712493D5F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712244E010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F64E0AD0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712493D5F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712240C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716D83F050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672BBD20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A13FE40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716D83F050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123D9F0D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672BBD20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712493D5F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712493D5F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716D83F050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716C69C040 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123D9F0D0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A6F6F70 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712240C020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.265 seconds
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.595 seconds
+Domain Reload Profiling: 858ms
+	BeginReloadAssembly (92ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (129ms)
+		LoadAssemblies (168ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (595ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (318ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (253ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 4.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.3 KB). Loaded Objects now: 4023.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.144500 ms (FindLiveObjects: 0.179800 ms CreateObjectMapping: 0.048800 ms MarkObjects: 1.880800 ms  DeleteObjects: 0.034500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E728150 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712244E010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E728150 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E728150 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716C56F030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A163020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118A5E030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A293D20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124A83020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E780830 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716BC8B010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E728150 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E728150 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A163020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171222A4020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166869E50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118530F60 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716B0ACF50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017167063C40 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F7AC60 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716C56F030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.286 seconds
+Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.564 seconds
+Domain Reload Profiling: 848ms
+	BeginReloadAssembly (100ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (167ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (564ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (270ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (214ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.3 KB). Loaded Objects now: 4026.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.160700 ms (FindLiveObjects: 0.152000 ms CreateObjectMapping: 0.057700 ms MarkObjects: 1.913600 ms  DeleteObjects: 0.036600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716BC8B010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171249AD010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716BC8B010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171229A91F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716EE3C7A0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F9C010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122280020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E839D30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A293D20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A163020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017123255050 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122280020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171229A91F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171229A91F0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F9C010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716DC31020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166869E50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A163020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712396F010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F03020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F03020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017124A60C80 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716EE3C7A0 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.268 seconds
+Refreshing native plugins compatible for Editor in 2.48 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.626 seconds
+Domain Reload Profiling: 893ms
+	BeginReloadAssembly (92ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (164ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (626ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (341ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (272ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.3 KB). Loaded Objects now: 4029.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.217500 ms (FindLiveObjects: 0.141500 ms CreateObjectMapping: 0.050500 ms MarkObjects: 1.987600 ms  DeleteObjects: 0.037200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file data-0000017118180020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672BBD20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66CF660 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171672BBD20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711812B470 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001712234A010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A347040 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716F0C6170 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017118A5E030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A293D20 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A163020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716F1FC030 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122F9C010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711812B470 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711812B470 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A347040 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000171194AF020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716D008010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017166869E50 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716A163020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017117EBE010 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001711938C440 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716F0C6170 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716F0C6170 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000017122897020 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001716E839D30 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000170F66CF660 doesn't match image C:\Users\ICTS23-25.149\Documents\GitHub\AppleBox\AppleBox\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.261 seconds
+Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.605 seconds
+Domain Reload Profiling: 864ms
+	BeginReloadAssembly (92ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (126ms)
+		LoadAssemblies (165ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (605ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (328ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (263ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.3 KB). Loaded Objects now: 4032.
+Memory consumption went from 139.1 MB to 139.1 MB.
+Total: 2.355200 ms (FindLiveObjects: 0.159300 ms CreateObjectMapping: 0.052400 ms MarkObjects: 2.109100 ms  DeleteObjects: 0.033600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

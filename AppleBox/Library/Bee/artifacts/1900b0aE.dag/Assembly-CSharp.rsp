@@ -364,6 +364,7 @@
 "Assets/script/Generici/interatoreLetto.cs"
 "Assets/script/Generici/mainMenu.cs"
 "Assets/script/Generici/mouseLook.cs"
+"Assets/script/Generici/noSaveCheck.cs"
 "Assets/script/Generici/pauseMenu.cs"
 "Assets/script/Generici/playerMovement.cs"
 "Assets/script/Generici/spawnApple.cs"
