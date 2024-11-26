@@ -3,13 +3,17 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class interatoreLetto : MonoBehaviour
 {
     bool playerInTrigger;
+    public GameObject transizione;
+    public Animator transition;
     // Start is called before the first frame update
     public void Start()
     {
+        transizione.SetActive(false);
         playerInTrigger = false;
         Debug.Log(gameHandler.Plevel);
     }
@@ -33,8 +37,18 @@ public class interatoreLetto : MonoBehaviour
                 PlayerPrefs.SetInt("PlayerLevel", gameHandler.Plevel + 1);
                 gameHandler.Plevel = gameHandler.Plevel + 1;
                 Debug.Log(gameHandler.Plevel);
-                SceneManager.LoadScene("Livello" + gameHandler.Plevel);
+                int livelloIndex = gameHandler.Plevel;
+                StartCoroutine(loadLevel(livelloIndex));
             }
         }
     }
+
+    IEnumerator loadLevel(int levelIndex)
+    {
+        transizione.SetActive(true);
+        transition.SetTrigger("start");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Livello" + levelIndex);
+    }
+    
 }

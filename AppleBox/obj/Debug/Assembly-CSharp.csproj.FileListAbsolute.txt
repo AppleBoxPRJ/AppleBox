@@ -1,0 +1,2 @@
+C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -13,6 +13,7 @@ public class cassaCollezionista : MonoBehaviour
     public bool playerInTrigger;
     public GameObject text;
     
+    
     public int livello = gameHandler.Plevel;
 
 
@@ -60,13 +61,13 @@ public class cassaCollezionista : MonoBehaviour
                 case 1:
                     if (count == 5)
                     {
-                        text.gameObject.SetActive(true);
+                        text.SetActive(true);
                     }
                     break;
                 case 2:
                     if (count == 8)
                     {
-                        text.gameObject.SetActive(true);
+                        text.SetActive(true);
                     }
 
                     break;
