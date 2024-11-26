@@ -12,13 +12,18 @@ public class cassaCollezionista : MonoBehaviour
     public static int count;
     public bool playerInTrigger;
     public GameObject text;
+    
+    public int livello = gameHandler.Plevel;
 
 
     //all'inizio dell'esecuzione nasconde il testo
     public void Start()
     {
+        Debug.Log("plevel: " + gameHandler.Plevel);
         playerInTrigger = false;
         text.SetActive(false);
+        count = 0;
+        Debug.Log("count: " + count);
     }
 
     //quando entra il trigger mostra la scritta
@@ -47,14 +52,26 @@ public class cassaCollezionista : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                
                 DeCollected?.Invoke();
             }
 
-            if (count == 5)
+            switch (livello)
             {
-                text.gameObject.SetActive(true);
+                case 1:
+                    if (count == 5)
+                    {
+                        text.gameObject.SetActive(true);
+                    }
+                    break;
+                case 2:
+                    if (count == 8)
+                    {
+                        text.gameObject.SetActive(true);
+                    }
+
+                    break;
             }
+
             
         } 
         else

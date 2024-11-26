@@ -11,14 +11,14 @@ public class cassaCollezionista_LVL2 : MonoBehaviour
     //public GameObject muro;
     public static int count;
     public bool playerInTrigger;
-    //public GameObject text;
+    public GameObject text;
 
 
     //all'inizio dell'esecuzione nasconde il testo
     public void Start()
     {
         playerInTrigger = false;
-        //text.SetActive(false);
+        text.SetActive(false);
     }
 
     //quando entra il trigger mostra la scritta
@@ -47,13 +47,13 @@ public class cassaCollezionista_LVL2 : MonoBehaviour
         {
             if (Input.GetKeyDown("e"))
             {
-                
+                Debug.Log("metti le cazzo di mele");
                 DeCollected?.Invoke();
             }
 
             if (count == 5)
             {
-                //text.gameObject.SetActive(true);
+                text.gameObject.SetActive(true);
             }
             
         } 

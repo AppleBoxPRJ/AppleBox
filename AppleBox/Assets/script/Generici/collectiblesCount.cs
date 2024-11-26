@@ -11,7 +11,7 @@ public class collectiblesCount : MonoBehaviour
     public void Awake()
     {
         counterOggetti = 0;
-        
+        passaggioDiLivello = 0;
     }
 
 

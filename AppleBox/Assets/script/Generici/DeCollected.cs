@@ -12,6 +12,7 @@ public class DeCollecteds : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log("xxx");
         cassaCollezionista.DeCollected += siMaAncheMeno;
     }
     void OnDisable() => cassaCollezionista.DeCollected -= siMaAncheMeno;

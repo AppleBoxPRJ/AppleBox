@@ -11,7 +11,7 @@ public class gameHandler : MonoBehaviour
     void Start()
     {
         Debug.Log("PlayerPrefs.HasKey('PlayerLevel'): " + PlayerPrefs.HasKey("PlayerLevel"));
-        Debug.Log(Plevel);
+        Debug.Log("plevel: " + Plevel);
 
         if (PlayerPrefs.HasKey("PlayerLevel"))
         {
