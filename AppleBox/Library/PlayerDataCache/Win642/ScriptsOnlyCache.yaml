@@ -202,37 +202,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 25294}
     - Class: 114
-      Script: {instanceID: 25296}
+      Script: {instanceID: 25414}
     - Class: 114
-      Script: {instanceID: 25416}
+      Script: {instanceID: 25548}
     - Class: 114
-      Script: {instanceID: 25550}
+      Script: {instanceID: 25584}
     - Class: 114
-      Script: {instanceID: 25586}
+      Script: {instanceID: 25680}
     - Class: 114
-      Script: {instanceID: 25682}
+      Script: {instanceID: 25818}
     - Class: 114
-      Script: {instanceID: 25820}
+      Script: {instanceID: 26332}
     - Class: 114
-      Script: {instanceID: 26334}
+      Script: {instanceID: 26518}
     - Class: 114
-      Script: {instanceID: 26520}
+      Script: {instanceID: 26886}
     - Class: 114
-      Script: {instanceID: 26888}
+      Script: {instanceID: 27156}
     - Class: 114
-      Script: {instanceID: 27158}
+      Script: {instanceID: 27316}
     - Class: 114
-      Script: {instanceID: 27318}
+      Script: {instanceID: 27382}
     - Class: 114
-      Script: {instanceID: 27384}
+      Script: {instanceID: 27600}
     - Class: 114
-      Script: {instanceID: 27602}
+      Script: {instanceID: 27836}
     - Class: 114
-      Script: {instanceID: 27838}
+      Script: {instanceID: 28108}
     - Class: 114
-      Script: {instanceID: 28110}
+      Script: {instanceID: 28144}
     - Class: 114
       Script: {instanceID: 29416}
     - Class: 114
@@ -279,6 +279,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
     Assets/Scenes/Livello2.unity:
@@ -323,35 +325,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 25294}
     - Class: 114
-      Script: {instanceID: 25296}
+      Script: {instanceID: 25414}
     - Class: 114
-      Script: {instanceID: 25416}
+      Script: {instanceID: 25548}
     - Class: 114
-      Script: {instanceID: 25550}
+      Script: {instanceID: 25584}
     - Class: 114
-      Script: {instanceID: 25586}
+      Script: {instanceID: 25680}
     - Class: 114
-      Script: {instanceID: 25682}
+      Script: {instanceID: 25818}
     - Class: 114
-      Script: {instanceID: 25820}
+      Script: {instanceID: 26518}
     - Class: 114
-      Script: {instanceID: 26520}
+      Script: {instanceID: 26664}
     - Class: 114
-      Script: {instanceID: 26666}
+      Script: {instanceID: 26886}
     - Class: 114
-      Script: {instanceID: 26888}
+      Script: {instanceID: 27156}
     - Class: 114
-      Script: {instanceID: 27158}
+      Script: {instanceID: 27316}
     - Class: 114
-      Script: {instanceID: 27318}
+      Script: {instanceID: 27382}
     - Class: 114
-      Script: {instanceID: 27384}
+      Script: {instanceID: 27600}
     - Class: 114
-      Script: {instanceID: 27602}
+      Script: {instanceID: 27836}
     - Class: 114
-      Script: {instanceID: 27838}
+      Script: {instanceID: 28144}
     - Class: 114
       Script: {instanceID: 29416}
     - Class: 114
@@ -396,6 +398,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
@@ -422,19 +426,19 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 25416}
+      Script: {instanceID: 25414}
     - Class: 114
-      Script: {instanceID: 25682}
+      Script: {instanceID: 25680}
     - Class: 114
-      Script: {instanceID: 26212}
+      Script: {instanceID: 26210}
     - Class: 114
-      Script: {instanceID: 26888}
+      Script: {instanceID: 26886}
     - Class: 114
-      Script: {instanceID: 27384}
+      Script: {instanceID: 27382}
     - Class: 114
-      Script: {instanceID: 27602}
+      Script: {instanceID: 27600}
     - Class: 114
-      Script: {instanceID: 27838}
+      Script: {instanceID: 27836}
     - Class: 114
       Script: {instanceID: 28616}
     - Class: 114
@@ -491,12 +495,6 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: f7f9fe9f63a8982587a0517a8c354d90
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: cassaCollezionista
   - hash:
       serializedVersion: 2
       Hash: b2d2a01a2a85d9ed12e80cb33a9a6044
@@ -985,6 +983,12 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
+      Hash: f7f9fe9f63a8982587a0517a8c354d90
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: cassaCollezionista
+  - hash:
+      serializedVersion: 2
       Hash: 3b5263a98bcc71d9a9d1d78a31b34ced
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1357,7 +1361,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerEnterMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f65efaeb8befa0ee0bc9f4a1f9c5e4b8
+      Hash: 534838fbfdd4e5876a63530b1afbf8c7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: interatoreLetto
