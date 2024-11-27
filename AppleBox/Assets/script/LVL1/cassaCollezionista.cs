@@ -12,14 +12,7 @@ public class cassaCollezionista : MonoBehaviour
     public static int count;
     public bool playerInTrigger;
     public GameObject text;
-<<<<<<< Updated upstream
-    
-    public int livello = gameHandler.Plevel;
-=======
-
     public int livello;
->>>>>>> Stashed changes
-
 
     //all'inizio dell'esecuzione nasconde il testo
     public void Start()

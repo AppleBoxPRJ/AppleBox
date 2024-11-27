@@ -1,0 +1,33 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="mainMenu">
+			<method name="esciDalGioco"/>
+			<method name="newGame"/>
+			<method name="riprendi"/>
+		</type>
+		<type fullname="pauseMenu">
+			<method name="Exit"/>
+			<method name="Exit"/>
+			<method name="Home"/>
+			<method name="Home"/>
+			<method name="Resume"/>
+			<method name="Resume"/>
+		</type>
+		<type fullname="playerMovement">
+			<method name="OnMove"/>
+			<method name="OnMove"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>

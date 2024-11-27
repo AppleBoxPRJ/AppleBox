@@ -7,10 +7,11 @@ public class spawnApple : MonoBehaviour
 {
     public GameObject melaPrefab;
     public float asseY = 0.3f;
-    public int lvlCount = gameHandler.Plevel;
+    public int lvlCount;
     // Start is called before the first frame update
     void Start()
     {
+        lvlCount = gameHandler.Plevel;
         playerLevelStart();
         //for (int i = 0; i <= 7; i++)
         //{
@@ -42,6 +43,8 @@ public class spawnApple : MonoBehaviour
                     Vector3 randomSpawnPosition = new Vector3(Random.Range(-110, -160), 0.30f, Random.Range(-37, 67));
                     Instantiate(melaPrefab, randomSpawnPosition, Quaternion.identity);
                 }
+                break;
+            default:
                 break;
         }
     }
