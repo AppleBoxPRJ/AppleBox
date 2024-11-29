@@ -3111,6 +3111,8 @@ MonoBehaviour:
   playerInTrigger: 0
   text: {fileID: 1788010069}
   livello: 0
+  porta: {fileID: 0}
+  porta_aperta: {fileID: 0}
 --- !u!1 &931673086
 GameObject:
   m_ObjectHideFlags: 0

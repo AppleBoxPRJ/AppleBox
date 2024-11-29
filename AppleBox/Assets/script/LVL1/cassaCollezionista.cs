@@ -13,6 +13,8 @@ public class cassaCollezionista : MonoBehaviour
     public bool playerInTrigger;
     public GameObject text;
     public int livello;
+    public GameObject porta;
+    public GameObject porta_aperta;
 
     //all'inizio dell'esecuzione nasconde il testo
     public void Start()
@@ -64,6 +66,7 @@ public class cassaCollezionista : MonoBehaviour
                     if (count == 8)
                     {
                         text.gameObject.SetActive(true);
+                        apriPorta();
                     }
                     break;
                 default:
@@ -79,5 +82,12 @@ public class cassaCollezionista : MonoBehaviour
         }
 
         //text.gameObject.SetActive(false);
+    }
+    
+    public void apriPorta()
+    {
+        porta_aperta.SetActive(true);
+        porta.SetActive(false);
+        playerInTrigger = false;
     }
 }

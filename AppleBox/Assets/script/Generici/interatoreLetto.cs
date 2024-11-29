@@ -8,7 +8,7 @@ public class interatoreLetto : MonoBehaviour
 {
     bool playerInTrigger;
     public Animator animator;
-    public float transitionTime = 4f;
+    public float transitionTime = 2f;
     // Start is called before the first frame update
     public void Start()
     {
