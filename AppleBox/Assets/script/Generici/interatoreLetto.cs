@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class interatoreLetto : MonoBehaviour
 {
-    bool playerInTrigger;
+    public bool playerInTrigger;
     public Animator animator;
     public float transitionTime = 1.5f;
 
@@ -26,6 +26,14 @@ public class interatoreLetto : MonoBehaviour
             Debug.Log("ci siamo");
             playerInTrigger = true;
 
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInTrigger = false;
         }
     }
     // Update is called once per frame

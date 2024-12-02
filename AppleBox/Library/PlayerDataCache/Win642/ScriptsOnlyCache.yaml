@@ -353,6 +353,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 27836}
     - Class: 114
+      Script: {instanceID: 28108}
+    - Class: 114
       Script: {instanceID: 28144}
     - Class: 114
       Script: {instanceID: 29416}
@@ -1386,7 +1388,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerEnterMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 534838fbfdd4e5876a63530b1afbf8c7
+      Hash: 7ff422bc00a15692c3b07897c96d5265
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: interatoreLetto
