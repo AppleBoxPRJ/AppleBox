@@ -35,7 +35,7 @@ public class pauseMenu : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             pauseMenuPrefab.SetActive(true);
-            otherCanva.SetActive(false);
+            //otherCanva.SetActive(false);
             pause = true;
             Time.timeScale = 0;
         }
@@ -44,7 +44,7 @@ public class pauseMenu : MonoBehaviour
     void PausaOff()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        otherCanva.SetActive(true);
+        //otherCanva.SetActive(true);
         pauseMenuPrefab.SetActive(false);
         pause = false;
         Time.timeScale = 1;

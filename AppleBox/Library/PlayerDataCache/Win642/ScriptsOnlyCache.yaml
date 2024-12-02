@@ -402,6 +402,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 1953259897
       Script: {instanceID: 0}
+    Assets/Scenes/Livello3.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -755,7 +780,7 @@ ScriptsOnlyBuild:
     className: InputDeviceDebuggerWindow
   - hash:
       serializedVersion: 2
-      Hash: c1649817ad867f874c8f9717a4b88bd1
+      Hash: 371c57f0f693a9439db1f79dd5b7dbb7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: messaggioUscitaCasa
@@ -983,7 +1008,7 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
-      Hash: f7f9fe9f63a8982587a0517a8c354d90
+      Hash: 239d6e297d894683fbaead00b9e6b29e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: cassaCollezionista
@@ -1580,5 +1605,6 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Livello1.unity
   - Assets/Scenes/Livello2.unity
+  - Assets/Scenes/Livello3.unity
   - Assets/Scenes/credits.unity
   playerPath: C:/Users/ICTS23-25.230/Documents/UnityPRJ/AppleBox/Build/AppleBox.exe

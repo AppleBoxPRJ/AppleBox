@@ -8,12 +8,15 @@ public class interatoreLetto : MonoBehaviour
 {
     bool playerInTrigger;
     public Animator animator;
-    public float transitionTime = 2f;
+    public float transitionTime = 1.5f;
+
+    //public int levelIndice;
     // Start is called before the first frame update
-    public void Start()
+    public void Awake()
     {
         playerInTrigger = false;
         Debug.Log(gameHandler.Plevel);
+        //levelIndice = gameHandler.Plevel;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -28,6 +31,7 @@ public class interatoreLetto : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        
         if (playerInTrigger == true)
         {
             if (Input.GetKeyDown("e"))
@@ -44,8 +48,10 @@ public class interatoreLetto : MonoBehaviour
 
     IEnumerator loadLevel(int levelIndex)
     {
+        Debug.Log("startCoroutine");
         animator.SetTrigger("start");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene("Livello" + levelIndex);
+
     }
 }

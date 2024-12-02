@@ -13,7 +13,7 @@ public class mouseLook : MonoBehaviour
     void Start()
     {
         //lock the cursor in the middle of the screen
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
