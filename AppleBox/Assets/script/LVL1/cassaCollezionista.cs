@@ -1,24 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class cassaCollezionista : MonoBehaviour
 {
     public static event Action DeCollected;
-    //public GameObject muro;
     public static int count;
     public bool playerInTrigger;
     public GameObject text;
     public int livello;
     public GameObject porta;
     public GameObject porta_aperta;
+    public Animator animator; // Riferimento all'Animator
 
-    //all'inizio dell'esecuzione nasconde il testo
-    public void Start()
-    { 
+    void Start()
+    {
         playerInTrigger = false;
         text.SetActive(false);
         count = 0;
@@ -26,18 +24,16 @@ public class cassaCollezionista : MonoBehaviour
         Debug.Log("livello: " + livello);
     }
 
-    //quando entra il trigger mostra la scritta
-    public void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             Debug.Log("ci siamo");
             playerInTrigger = true;
-
         }
     }
 
-    public void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -45,14 +41,15 @@ public class cassaCollezionista : MonoBehaviour
         }
     }
 
-    public void Update()
+    void Update()
     {
         count = collectiblesCount.passaggioDiLivello;
-        if (playerInTrigger == true)
+        if (playerInTrigger)
         {
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 DeCollected?.Invoke();
+                animator.SetTrigger("StartAnimation"); // Avvia l'animazione
             }
             switch (livello)
             {
@@ -73,17 +70,13 @@ public class cassaCollezionista : MonoBehaviour
                     Debug.Log("vabbe");
                     break;
             }
-
-            
-        } 
+        }
         else
         {
-            text.SetActive (false);
+            text.SetActive(false);
         }
-
-        //text.gameObject.SetActive(false);
     }
-    
+
     public void apriPorta()
     {
         porta_aperta.SetActive(true);
