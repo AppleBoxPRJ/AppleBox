@@ -23,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/credits.unity
     guid: 60400b0bb75448c4db9551e67d79a4a7
+  - enabled: 1
+    path: Assets/Scenes/Finale_Segreto1.unity
+    guid: 88d03bc8abe86f04aaf90f54d216ce1a
+  - enabled: 1
+    path: Assets/Scenes/Finale_Segreto2.unity
+    guid: b1f716d5014c3564683a1f825d85e6cc
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

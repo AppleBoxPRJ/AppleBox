@@ -15,8 +15,8 @@ public class walkIntoTheUnknown : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-            Debug.Log("hai scelto la strada che non ti condurrà da nessuna parte");
-            SceneManager.LoadScene("credits");
+            Debug.Log("hai scelto la strada che non ti condurrï¿½ da nessuna parte");
+            SceneManager.LoadScene("Finale_Segreto2");
 
         }
     }

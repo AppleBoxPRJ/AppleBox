@@ -40,7 +40,7 @@ public class interatoreLetto : MonoBehaviour
     public void Update()
     {
         
-        if (playerInTrigger == true)
+        if (playerInTrigger == true && cassaCollezionista.count != 0)
         {
             if (Input.GetKeyDown("e"))
             {
@@ -51,6 +51,15 @@ public class interatoreLetto : MonoBehaviour
                 //SceneManager.LoadScene("Livello" + gameHandler.Plevel);
                 StartCoroutine(loadLevel(levelIndice));
             }
+        }
+
+        if (playerInTrigger == true && cassaCollezionista.count == 0)
+        {
+            if (Input.GetKeyDown("e"))
+            {
+                SceneManager.LoadScene("Finale_Segreto1");
+            }
+           
         }
     }
 
