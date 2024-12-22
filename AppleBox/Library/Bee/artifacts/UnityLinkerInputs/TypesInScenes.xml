@@ -1,5 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="Billboard" preserve="nothing"/>
 		<type fullname="cassaCollezionista" preserve="nothing"/>
 		<type fullname="collectApple" preserve="nothing"/>
 		<type fullname="collectiblesCount" preserve="nothing"/>
@@ -14,6 +15,7 @@
 		<type fullname="mouseLook" preserve="nothing"/>
 		<type fullname="noSaveCheck" preserve="nothing"/>
 		<type fullname="pauseMenu" preserve="nothing"/>
+		<type fullname="PlayerDetector" preserve="nothing"/>
 		<type fullname="playerMovement" preserve="nothing"/>
 		<type fullname="spawnApple" preserve="nothing"/>
 		<type fullname="testoDaScomparire" preserve="nothing"/>
@@ -21,12 +23,15 @@
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.InputActionReference" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputSystemObject" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.PlayerInput" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
+		<type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TextMeshPro" preserve="nothing"/>
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
