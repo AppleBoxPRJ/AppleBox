@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -556,14 +556,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ICTS23-25.230\Documents\UnityPRJ\AppleBox\AppleBox\AppleBox
+  m_LastProjectPath: C:\Users\ICTS23-25.394\Documents\GitHub\AppleBox\AppleBox
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c2950000
-    m_LastClickedID: 38338
-    m_ExpandedIDs: 00000000529500005495000056950000589500005a9500005c9500005e95000060950000c295000000ca9a3bffffff7f
+    m_SelectedIDs: 94940000
+    m_LastClickedID: 38036
+    m_ExpandedIDs: 000000008494000086940000889400008a9400008c9400008e94000090940000929400009494000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,7 +592,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000529500005495000056950000589500005a9500005c9500005e95000060950000
+    m_ExpandedIDs: 000000008494000086940000889400008a9400008c9400008e940000909400009294000094940000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -738,9 +738,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 286dffff266dffff246dffff226dffff206dffff1e6dffff1c6dffff
-      m_LastClickedID: -37604
-      m_ExpandedIDs: 34acffff
+      m_SelectedIDs: a08f0000
+      m_LastClickedID: 36768
+      m_ExpandedIDs: aaafffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1039,7 +1039,7 @@ MonoBehaviour:
       sizeOverridden: 0
     - dockPosition: 1
       containerId: overlay-container--right
-      displayed: 1
+      displayed: 0
       id: Scene View/Particles
       index: 6
       contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":24.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
@@ -1298,9 +1298,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.47481504, y: -0.07022131, z: 0.038301263, w: 0.8764432}
   m_Size:
-    m_Target: 52.966877
+    m_Target: 1.0912404
     speed: 2
-    m_Value: 52.966877
+    m_Value: 1.0442492
   m_Ortho:
     m_Target: 0
     speed: 2
