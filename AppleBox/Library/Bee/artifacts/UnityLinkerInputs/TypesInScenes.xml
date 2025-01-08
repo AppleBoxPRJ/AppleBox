@@ -14,11 +14,13 @@
 		<type fullname="messaggioUscitaCasa" preserve="nothing"/>
 		<type fullname="mouseLook" preserve="nothing"/>
 		<type fullname="noSaveCheck" preserve="nothing"/>
+		<type fullname="Outline" preserve="nothing"/>
 		<type fullname="pauseMenu" preserve="nothing"/>
 		<type fullname="PlayerDetector" preserve="nothing"/>
 		<type fullname="playerMovement" preserve="nothing"/>
 		<type fullname="spawnApple" preserve="nothing"/>
 		<type fullname="testoDaScomparire" preserve="nothing"/>
+		<type fullname="TriggerAnimation" preserve="nothing"/>
 		<type fullname="walkIntoTheUnknown" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
@@ -77,6 +79,8 @@
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEngine.Object" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.QualitySettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>

@@ -5,10 +5,11 @@ public class Billboard : MonoBehaviour
 {
     public Transform playerTransform;
     public TextMeshPro appleText; // Componente TextMeshPro per visualizzare il testo
+    public int livello;
 
     void Start()
     {
-        
+        livello = gameHandler.Plevel;
     }
 
     void Update()
@@ -17,6 +18,18 @@ public class Billboard : MonoBehaviour
         transform.LookAt(transform.position + playerTransform.rotation * Vector3.forward, playerTransform.rotation * Vector3.up);
 
         // Aggiorna il testo con il valore di count
-        appleText.text = "x " + cassaCollezionista.count + " / 5";
+        
+        switch (livello)
+        {
+            case 1:
+                appleText.text = "x " + cassaCollezionista.count + " / 5";
+                break;
+            case 2:
+                appleText.text = "x " + cassaCollezionista.count + " / 8";
+                break;
+            default:
+                Debug.Log("vabbe");
+                break;
+        }
     }
 }
