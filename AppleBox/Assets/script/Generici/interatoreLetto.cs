@@ -53,7 +53,7 @@ public class interatoreLetto : MonoBehaviour
             }
         }
 
-        if (playerInTrigger == true && cassaCollezionista.count == 0)
+        if (playerInTrigger == true && cassaCollezionista.count == 0 && gameHandler.Plevel <= 2)
         {
             if (Input.GetKeyDown("e"))
             {
