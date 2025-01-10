@@ -9,14 +9,22 @@
 			<method name="Exit"/>
 			<method name="Exit"/>
 			<method name="Exit"/>
+			<method name="Exit"/>
+			<method name="Exit"/>
 			<method name="Home"/>
 			<method name="Home"/>
 			<method name="Home"/>
+			<method name="Home"/>
+			<method name="Home"/>
+			<method name="Resume"/>
+			<method name="Resume"/>
 			<method name="Resume"/>
 			<method name="Resume"/>
 			<method name="Resume"/>
 		</type>
 		<type fullname="playerMovement">
+			<method name="OnMove"/>
+			<method name="OnMove"/>
 			<method name="OnMove"/>
 			<method name="OnMove"/>
 			<method name="OnMove"/>

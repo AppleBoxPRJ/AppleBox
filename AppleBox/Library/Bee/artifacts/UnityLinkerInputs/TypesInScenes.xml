@@ -18,6 +18,7 @@
 		<type fullname="pauseMenu" preserve="nothing"/>
 		<type fullname="PlayerDetector" preserve="nothing"/>
 		<type fullname="playerMovement" preserve="nothing"/>
+		<type fullname="SceneTransitionCall" preserve="nothing"/>
 		<type fullname="spawnApple" preserve="nothing"/>
 		<type fullname="testoDaScomparire" preserve="nothing"/>
 		<type fullname="TriggerAnimation" preserve="nothing"/>
