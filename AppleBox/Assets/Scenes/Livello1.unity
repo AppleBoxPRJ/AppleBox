@@ -2142,7 +2142,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 8, y: 38.43, z: 597.73}
-  m_Center: {x: -268.6, y: -19.4, z: 46.7}
+  m_Center: {x: -111.1, y: -19.4, z: 46.7}
 --- !u!65 &772670700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2162,8 +2162,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 617.8, y: 36.85, z: 11.7}
-  m_Center: {x: 1, y: -22.76, z: -217.1}
+  m_Size: {x: 660.4, y: 36.85, z: 11.7}
+  m_Center: {x: 1, y: -22.76, z: -87.5}
 --- !u!65 &772670701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2184,7 +2184,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 626.03, y: 59.62, z: 14.7}
-  m_Center: {x: 9.92, y: -31.14, z: 315}
+  m_Center: {x: 8.5, y: -31.14, z: 157.51}
 --- !u!65 &772670702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2205,7 +2205,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 15.84, y: 35.99, z: 615.82}
-  m_Center: {x: 249.59, y: -25.5, z: 48.8}
+  m_Center: {x: 159.7, y: -25.5, z: 48.8}
 --- !u!4 &772670703
 Transform:
   m_ObjectHideFlags: 0
@@ -5522,6 +5522,8 @@ GameObject:
   - component: {fileID: 1958766527}
   - component: {fileID: 1958766529}
   - component: {fileID: 1958766528}
+  - component: {fileID: 1958766530}
+  - component: {fileID: 1958766532}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -5529,21 +5531,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1958766523
-Transform:
+--- !u!224 &1958766523
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958766522}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.73, z: 0}
+  m_LocalRotation: {x: 0, y: 0.20791169, z: 0, w: 0.9781476}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 334441690}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 24, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.73}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1958766524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5657,6 +5663,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83aeea0b0459e0245b4232ac8b02f78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1958766530
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958766522}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: daf81cbf03d159d4191f6e20c2a69c92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!222 &1958766532
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958766522}
+  m_CullTransparentMesh: 1
 --- !u!1 &1968427561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5568371526223589888, guid: b93298fc2925ab2479efeccebec013d8, type: 3}
