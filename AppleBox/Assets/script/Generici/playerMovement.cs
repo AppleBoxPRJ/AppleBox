@@ -11,6 +11,8 @@ public class playerMovement : MonoBehaviour
     public Transform cameraTransform;
     public Vector3 forward;
     public Vector3 right;
+
+    public static Vector3 move;
     // Start is called before the first frame update
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -23,11 +25,11 @@ public class playerMovement : MonoBehaviour
         Movements();
     }
 
-    private void Movements()
+    public void Movements()
     {        
         forward = cameraTransform.forward;
         right = cameraTransform.right;
-        Vector3 move = (forward * movementDirection.y + right * movementDirection.x); //new Vector3(-movementDirection.y, 0, -movementDirection.x) * speed * Time.deltaTime;
+        move = (forward * movementDirection.y + right * movementDirection.x); //new Vector3(-movementDirection.y, 0, -movementDirection.x) * speed * Time.deltaTime;
         //Debug.Log($"Move Input: {movementDirection}");
         controller.Move(move * speed * Time.deltaTime);
 
