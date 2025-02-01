@@ -401,6 +401,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.28f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Creative stuff Fabio/SceneTransitionCall.cs"
 "Assets/Creative stuff Fabio/TriggerAnimation.cs"
+"Assets/HeadBobbing/headBobbingScript.cs"
 "Assets/PlayerInput/Controls.cs"
 "Assets/QuickOutline/Scripts/Outline.cs"
 "Assets/script/Generici/BillBoard.cs"
@@ -424,6 +425,7 @@
 "Assets/script/LVL1/testoDaScomparire.cs"
 "Assets/script/LVL2/cassaCollezionista_LVL2.cs"
 "Assets/script/LVL2/messaggioUscitaCasa.cs"
+"Assets/Transitions/lost/totallyLostScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+
