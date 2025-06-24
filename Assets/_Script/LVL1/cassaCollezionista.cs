@@ -46,7 +46,7 @@ public class cassaCollezionista : MonoBehaviour
         count = collectiblesCount.passaggioDiLivello;
         if (playerInTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && CollectiblesCount.counterOggetti > 0)
             {
                 DeCollected?.Invoke();
                 animator.SetTrigger("StartAnimation"); // Avvia l'animazione
