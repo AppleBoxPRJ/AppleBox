@@ -38,11 +38,11 @@ public class TriggerAnimation : MonoBehaviour
 
     public void changeLevel()
     {
-        PlayerPrefs.SetInt("PlayerLevel", gameHandler.Plevel + 1);
-        gameHandler.Plevel = gameHandler.Plevel + 1;
-        Debug.Log(gameHandler.Plevel);
-        int levelIndice = gameHandler.Plevel;
-        //SceneManager.LoadScene("Livello" + gameHandler.Plevel);
+        PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel + 1);
+        GameHandler.Plevel = GameHandler.Plevel + 1;
+        Debug.Log(GameHandler.Plevel);
+        int levelIndice = GameHandler.Plevel;
+        //SceneManager.LoadScene("Livello" + GameHandler.Plevel);
         StartCoroutine(loadLevel(levelIndice));
     }
     

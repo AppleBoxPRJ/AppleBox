@@ -1,57 +1,37 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Unity.VisualScripting;
 
-public class cassaCollezionista : MonoBehaviour
+public class CassaCollezionista : MonoBehaviour
 {
     public static event Action DeCollected;
     public static int count;
-    public bool playerInTrigger;
-    public GameObject text;
-    public int livello;
-    public GameObject porta;
-    public GameObject porta_aperta;
-    public Animator animator; // Riferimento all'Animator
 
-    void Start()
+    private bool _playerInTrigger;
+    [SerializeField] private GameObject text;
+    [SerializeField] private GameObject porta;
+    [SerializeField] private GameObject portaAperta;
+    [SerializeField] private Animator animator;
+    
+    private void Start()
     {
-        playerInTrigger = false;
         text.SetActive(false);
-        count = 0;
-        livello = gameHandler.Plevel;
-        Debug.Log("livello: " + livello);
+        _playerInTrigger = false;
+        Debug.Log("Livello: " + GameHandler.Plevel);
     }
-
-    void OnTriggerEnter(Collider other)
+    
+    private void Update()
     {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("ci siamo");
-            playerInTrigger = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerInTrigger = false;
-        }
-    }
-
-    void Update()
-    {
-        count = collectiblesCount.passaggioDiLivello;
-        if (playerInTrigger)
+        count = CollectiblesCount.passaggioDiLivello;
+        
+        if (_playerInTrigger)
         {
             if (Input.GetKeyDown(KeyCode.E) && CollectiblesCount.counterOggetti > 0)
             {
                 DeCollected?.Invoke();
                 animator.SetTrigger("StartAnimation"); // Avvia l'animazione
             }
-            switch (livello)
+            
+            switch (GameHandler.Plevel)
             {
                 case 1:
                     if (count == 5)
@@ -63,7 +43,7 @@ public class cassaCollezionista : MonoBehaviour
                     if (count == 8)
                     {
                         text.gameObject.SetActive(true);
-                        apriPorta();
+                        ApriPorta();
                     }
                     break;
                 default:
@@ -77,10 +57,24 @@ public class cassaCollezionista : MonoBehaviour
         }
     }
 
-    public void apriPorta()
+    private void OnTriggerEnter(Collider other)
     {
-        porta_aperta.SetActive(true);
+        if (!other.CompareTag("Player")) return;
+        
+        _playerInTrigger = true;
+        Debug.Log("ci siamo");
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        
+        _playerInTrigger = false;
+    }
+    
+    private void ApriPorta()
+    {
+        portaAperta.SetActive(true);
         porta.SetActive(false);
-        playerInTrigger = false;
     }
 }

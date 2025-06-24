@@ -1,21 +1,13 @@
-using JetBrains.Annotations;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pauseMenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenuPrefab;
     public GameObject otherCanva;
     bool pause;
 
-
-
-
-        // Start is called before the first frame update
-        void Start()
+    private void Start()
     {
         PausaOff();
     }
@@ -24,24 +16,22 @@ public class pauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //Debug.Log("lo leggo");
             PausaOn();
         }
     }
 
-    void PausaOn()
+    private void PausaOn()
     {
-        if(pause == false)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            pauseMenuPrefab.SetActive(true);
-            //otherCanva.SetActive(false);
-            pause = true;
-            Time.timeScale = 0;
-        }
+        if (pause != false) return;
+        
+        Cursor.lockState = CursorLockMode.None;
+        pauseMenuPrefab.SetActive(true);
+        //otherCanva.SetActive(false);
+        pause = true;
+        Time.timeScale = 0;
     }
 
-    void PausaOff()
+    private void PausaOff()
     {
         Cursor.lockState = CursorLockMode.Locked;
         //otherCanva.SetActive(true);

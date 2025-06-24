@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-public class interactionDoor : MonoBehaviour
+public class InteractionDoor : MonoBehaviour
 {
     public GameObject porta;
     public GameObject porta_aperta;
@@ -15,7 +11,7 @@ public class interactionDoor : MonoBehaviour
     public bool playerInTrigger;
 
     public GameObject messaggioIniziale;
-    // Start is called before the first frame update
+
     void Start()
     {
         text.SetActive(false);
@@ -28,9 +24,6 @@ public class interactionDoor : MonoBehaviour
         messaggioIniziale.SetActive(true);
     }
 
-
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("e"))
@@ -49,13 +42,13 @@ public class interactionDoor : MonoBehaviour
                 text.SetActive(false);
                 collider2.SetActive(true);
                 //text2.SetActive(true);
-                apriPorta();
+                ApriPorta();
             }
         }
 
-        if(cassaCollezionista.count == 5)
+        if(CassaCollezionista.count == 5)
         {
-            apriPorta();
+            ApriPorta();
         }
     }
 
@@ -79,7 +72,7 @@ public class interactionDoor : MonoBehaviour
         }
     }
 
-    public void apriPorta()
+    private void ApriPorta()
     {
         porta_aperta.SetActive(true);
         porta.SetActive(false);

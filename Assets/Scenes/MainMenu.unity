@@ -274,7 +274,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015102635}
         m_TargetAssemblyTypeName: mainMenu, Assembly-CSharp
-        m_MethodName: riprendi
+        m_MethodName: Riprendi
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -695,7 +695,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015102635}
         m_TargetAssemblyTypeName: mainMenu, Assembly-CSharp
-        m_MethodName: newGame
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2398,7 +2398,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2015102635}
         m_TargetAssemblyTypeName: mainMenu, Assembly-CSharp
-        m_MethodName: esciDalGioco
+        m_MethodName: EsciDalGioco
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

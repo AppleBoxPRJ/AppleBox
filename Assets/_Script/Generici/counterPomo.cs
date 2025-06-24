@@ -1,22 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class counterPomo : MonoBehaviour
+public class CounterPomo : MonoBehaviour
 {
-    public collectiblesCount counterOggetti;
     public TextMeshProUGUI textPunteggio;
     public int punteggio;
-    void Update()
+
+    private void Update()
     {
         AggiornaPunteggio();
     }
 
-    public void AggiornaPunteggio()
+    private void AggiornaPunteggio()
     {
-        punteggio = collectiblesCount.counterOggetti;
+        punteggio = CollectiblesCount.counterOggetti;
         textPunteggio.text = punteggio.ToString();
     }
 }

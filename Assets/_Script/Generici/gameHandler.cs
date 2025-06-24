@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class gameHandler : MonoBehaviour
+public class GameHandler : MonoBehaviour
 {
     public static int Plevel;
     public GameObject continueButton;
-    // Start is called before the first frame update
+    
     void Start()
     {
         Debug.Log("PlayerPrefs.HasKey('PlayerLevel'): " + PlayerPrefs.HasKey("PlayerLevel"));
@@ -34,10 +32,5 @@ public class gameHandler : MonoBehaviour
         {
             continueButton.GetComponent<Button>().interactable = true;
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

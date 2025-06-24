@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class collectiblesCount : MonoBehaviour
+public class CollectiblesCount : MonoBehaviour
 {
     public static int passaggioDiLivello;
     public static int counterOggetti;
@@ -14,40 +11,26 @@ public class collectiblesCount : MonoBehaviour
         passaggioDiLivello = 0;
     }
 
-
-    public static int Incrementa()
+    //utilizza la funzione OnCollected creata nel file CollectApple
+    private void OnEnable() => CollectApple.OnCollected += OnCollectiblesCollected;
+    private void OnDisable() => CollectApple.OnCollected -= OnCollectiblesCollected;
+    
+    public static void Incrementa()
     {
         counterOggetti++;
         Debug.Log(counterOggetti);
-        return counterOggetti;
     }
 
-    public static int Decrementa()
+    public static void Decrementa()
     {
+        if(counterOggetti == 0) return;
         
-        if(counterOggetti == 0)
-        {
-            return counterOggetti;
-        }
-        else
-        {
-            counterOggetti--;
-            passaggioDiLivello++;
-            Debug.Log(passaggioDiLivello);
-        }
-        return counterOggetti;
-
-        
+        counterOggetti--;
+        passaggioDiLivello++;
+        Debug.Log(passaggioDiLivello);
     }
 
-    //utilizza la funzione OnCollected creata nel file collectApple
-    void OnEnable()
-    {
-        collectApple.OnCollected += OnCollectiblesCollected;
-    }
-    void OnDisable() => collectApple.OnCollected -= OnCollectiblesCollected;
-
-    void OnCollectiblesCollected()
+    private void OnCollectiblesCollected()
     {
         Incrementa();
     }

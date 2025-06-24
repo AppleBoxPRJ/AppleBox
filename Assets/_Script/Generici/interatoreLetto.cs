@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class interatoreLetto : MonoBehaviour
+public class InteratoreLetto : MonoBehaviour
 {
     public bool playerInTrigger;
     public Animator animator;
@@ -15,8 +15,8 @@ public class interatoreLetto : MonoBehaviour
     public void Awake()
     {
         playerInTrigger = false;
-        Debug.Log(gameHandler.Plevel);
-        //levelIndice = gameHandler.Plevel;
+        Debug.Log(GameHandler.Plevel);
+        //levelIndice = GameHandler.Plevel;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -40,20 +40,20 @@ public class interatoreLetto : MonoBehaviour
     public void Update()
     {
         
-        if (playerInTrigger == true && cassaCollezionista.count != 0)
+        if (playerInTrigger == true && CassaCollezionista.count != 0)
         {
             if (Input.GetKeyDown("e"))
             {
-                PlayerPrefs.SetInt("PlayerLevel", gameHandler.Plevel + 1);
-                gameHandler.Plevel = gameHandler.Plevel + 1;
-                Debug.Log(gameHandler.Plevel);
-                int levelIndice = gameHandler.Plevel;
-                //SceneManager.LoadScene("Livello" + gameHandler.Plevel);
+                PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel + 1);
+                GameHandler.Plevel = GameHandler.Plevel + 1;
+                Debug.Log(GameHandler.Plevel);
+                int levelIndice = GameHandler.Plevel;
+                //SceneManager.LoadScene("Livello" + GameHandler.Plevel);
                 StartCoroutine(loadLevel(levelIndice));
             }
         }
 
-        if (playerInTrigger == true && cassaCollezionista.count == 0 && gameHandler.Plevel <= 2)
+        if (playerInTrigger == true && CassaCollezionista.count == 0 && GameHandler.Plevel <= 2)
         {
             if (Input.GetKeyDown("e"))
             {

@@ -2,31 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class spawnApple : MonoBehaviour
+public class SpawnApple : MonoBehaviour
 {
     public GameObject melaPrefab;
     public float asseY = 0.3f;
     public int lvlCount;
-    // Start is called before the first frame update
-    void Start()
-    {
-        lvlCount = gameHandler.Plevel;
-        playerLevelStart();
-        //for (int i = 0; i <= 7; i++)
-        //{
-        //    Vector3 randomSpawnPosition = new Vector3(Random.Range(-110, -160), 0.30f, Random.Range(-37, 67));
-        //    Instantiate(melaPrefab, randomSpawnPosition, Quaternion.identity);
-        //}
-    }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
+        lvlCount = GameHandler.Plevel;
+        PlayerLevelStart();
         
     }
 
-    void playerLevelStart()
+    private void PlayerLevelStart()
     {
         switch (lvlCount)
         {

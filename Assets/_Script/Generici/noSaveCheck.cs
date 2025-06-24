@@ -1,30 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class noSaveCheck : MonoBehaviour
+public class NoSaveCheck : MonoBehaviour
 {
-    public GameObject GameManager, continueButton;
-    //public gameHandler Plevel;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject continueButton;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (gameHandler.Plevel == 0)
-        {
-            continueButton.GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            continueButton.GetComponent<Button>().interactable = true;
-        }
+        continueButton.GetComponent<Button>().interactable = GameHandler.Plevel != 0;
     }
-        
 }

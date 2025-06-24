@@ -3,39 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class mainMenu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void newGame()
+    public void NewGame()
     {
         SceneManager.LoadScene("Livello1");
         PlayerPrefs.SetInt("PlayerLevel", 1);
-        gameHandler.Plevel = 1;
+        GameHandler.Plevel = 1;
     }
 
-    public void riprendi()
+    public void Riprendi()
     {
         PlayerPrefs.GetInt("PlayerLevel");
-        SceneManager.LoadScene("Livello" + gameHandler.Plevel);
+        SceneManager.LoadScene("Livello" + GameHandler.Plevel);
     }
 
-    public void settings()
+    public void Settings()
     {
         SceneManager.LoadScene("Settings");
     }
 
-    public void esciDalGioco()
+    public void EsciDalGioco()
     {
         Application.Quit();
     }

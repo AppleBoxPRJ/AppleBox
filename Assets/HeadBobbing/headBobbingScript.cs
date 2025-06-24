@@ -12,7 +12,7 @@ public class headBobbingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerMovement.move.magnitude >= 0.1f)
+        if (PlayerMovement.move.magnitude >= 0.1f)
         {
             startBobbing();
         }else

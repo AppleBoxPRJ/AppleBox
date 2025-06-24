@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -9,18 +7,17 @@ interface IInteractable
 }
 public class Interactor : MonoBehaviour
 {
-
     public Transform InteractionSource;
     public float InteractionRange = 3f;
     public int counterMele = 0;
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         InteractionRange = 3f;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         //controlla se viene premuto E
         if (Input.GetKeyDown(KeyCode.E))
@@ -38,7 +35,7 @@ public class Interactor : MonoBehaviour
             }
         }
 
-        if(testoDaScomparire.playerInTrigger == true)
+        if(TestoDaScomparire.playerInTrigger == true)
         {
             InteractionRange = 0f;
         }
