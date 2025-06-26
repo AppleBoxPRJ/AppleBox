@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] GameObject settingsMenu;
+
+    public void Start()
+    {
+        settingsMenu.SetActive(false);
+    }
+    
     public void NewGame()
     {
         SceneManager.LoadScene("Livello1");
@@ -16,11 +23,6 @@ public class MainMenu : MonoBehaviour
     {
         PlayerPrefs.GetInt("PlayerLevel");
         SceneManager.LoadScene("Livello" + GameHandler.Plevel);
-    }
-
-    public void Settings()
-    {
-        SceneManager.LoadScene("Settings");
     }
 
     public void EsciDalGioco()
