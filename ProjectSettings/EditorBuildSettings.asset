@@ -35,5 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Finale_Segreto2.unity
     guid: 5b470a3694ec306429bf0c50d0ba0209
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: d44688b6d569946e0b1c844f5985c19f, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 01c644d1a7af64036a1b90986ad38514, type: 3}
   m_UseUCBPForAssetBundles: 0

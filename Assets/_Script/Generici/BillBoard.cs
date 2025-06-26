@@ -15,10 +15,10 @@ public class Billboard : MonoBehaviour
         switch (GameHandler.Plevel)
         {
             case 1:
-                appleText.text = "x " + RuntimeData.Instance.ApplesDeliveredCount.Value + " / 5";
+                appleText.text = "x " + RuntimeData.Instance.applesDeliveredCount.Value + " / 5";
                 break;
             case 2:
-                appleText.text = "x " + RuntimeData.Instance.ApplesDeliveredCount.Value + " / 8";
+                appleText.text = "x " + RuntimeData.Instance.applesDeliveredCount.Value + " / 8";
                 break;
             default:
                 Debug.Log("vabbe");

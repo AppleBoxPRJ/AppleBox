@@ -9,6 +9,6 @@ public class CounterPomo : MonoBehaviour
     void Start()
     {
         _appleCountTMP = GetComponent<TextMeshProUGUI>();
-        RuntimeData.Instance.ApplesInInventoryCount.Subscribe(x => _appleCountTMP.text = x.ToString());
+        RuntimeData.Instance.applesInInventoryCount.Subscribe(x => _appleCountTMP.text = x.ToString());
     }
 }

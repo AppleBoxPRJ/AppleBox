@@ -7,7 +7,7 @@ public class CollectApple : MonoBehaviour, IInteractable
     public void Interact()
     {
         //Debug.Log("mela raccolta");
-        RuntimeData.Instance.ApplesInInventoryCount.Value++;
+        RuntimeData.Instance.applesInInventoryCount.Value++;
         Destroy(mela);
     }
 }

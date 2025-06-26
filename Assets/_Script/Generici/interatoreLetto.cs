@@ -34,7 +34,7 @@ public class InteratoreLetto : MonoBehaviour
 
     public void Update()
     {
-        if (playerInTrigger && RuntimeData.Instance.ApplesDeliveredCount.Value != 0)
+        if (playerInTrigger && RuntimeData.Instance.applesDeliveredCount.Value != 0)
         {
             if (Input.GetKeyDown("e"))
             {
@@ -46,7 +46,7 @@ public class InteratoreLetto : MonoBehaviour
             }
         }
 
-        if (playerInTrigger && RuntimeData.Instance.ApplesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2)
+        if (playerInTrigger && RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2)
         {
             if (Input.GetKeyDown("e"))
             {

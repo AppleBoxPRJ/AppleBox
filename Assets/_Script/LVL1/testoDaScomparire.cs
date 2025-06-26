@@ -5,8 +5,6 @@ public class TestoDaScomparire : MonoBehaviour
     public static bool playerInTrigger;
     public GameObject text;
     public GameObject collisore;
-    public GameObject messaggioIniziale;
-    public bool pausa = true;
 
     void Start()
     {

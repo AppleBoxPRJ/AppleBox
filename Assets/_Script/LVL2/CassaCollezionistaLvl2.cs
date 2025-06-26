@@ -13,7 +13,7 @@ public class CassaCollezionistaLvl2 : MonoBehaviour
         playerInTrigger = false;
         text.SetActive(false);
         
-        RuntimeData.Instance.ApplesDeliveredCount
+        RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == 5)
             .Subscribe(_ => text.gameObject.SetActive(true))
             .AddTo(this);
@@ -25,8 +25,8 @@ public class CassaCollezionistaLvl2 : MonoBehaviour
         
         if (Input.GetKeyDown("e"))
         {
-            RuntimeData.Instance.ApplesInInventoryCount.Value--;
-            RuntimeData.Instance.ApplesDeliveredCount.Value++;
+            RuntimeData.Instance.applesInInventoryCount.Value--;
+            RuntimeData.Instance.applesDeliveredCount.Value++;
             Debug.Log("metti le cazzo di mele");
         }
     }
