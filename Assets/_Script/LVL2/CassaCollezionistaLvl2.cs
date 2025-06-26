@@ -1,11 +1,8 @@
-using System;
+using UniRx;
 using UnityEngine;
 
 public class CassaCollezionistaLvl2 : MonoBehaviour
 {
-    public static event Action DeCollected;
-    //public GameObject muro;
-    public static int count;
     public bool playerInTrigger;
     public GameObject text;
 
@@ -15,22 +12,22 @@ public class CassaCollezionistaLvl2 : MonoBehaviour
     {
         playerInTrigger = false;
         text.SetActive(false);
+        
+        RuntimeData.Instance.ApplesDeliveredCount
+            .Where(x => x == 5)
+            .Subscribe(_ => text.gameObject.SetActive(true))
+            .AddTo(this);
     }
 
     void Update()
     {
-        count = CollectiblesCount.passaggioDiLivello;
         if (!playerInTrigger) return;
         
         if (Input.GetKeyDown("e"))
         {
-            DeCollected?.Invoke();
+            RuntimeData.Instance.ApplesInInventoryCount.Value--;
+            RuntimeData.Instance.ApplesDeliveredCount.Value++;
             Debug.Log("metti le cazzo di mele");
-        }
-
-        if (count == 5)
-        {
-            text.gameObject.SetActive(true);
         }
     }
     

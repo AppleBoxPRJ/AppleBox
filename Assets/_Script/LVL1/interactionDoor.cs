@@ -1,9 +1,10 @@
+using UniRx;
 using UnityEngine;
 
 public class InteractionDoor : MonoBehaviour
 {
     public GameObject porta;
-    public GameObject porta_aperta;
+    public GameObject portaAperta;
     public GameObject text;
     //public GameObject text2;
     public GameObject collider2;
@@ -17,23 +18,24 @@ public class InteractionDoor : MonoBehaviour
         text.SetActive(false);
         //text2.SetActive(false);
         porta.SetActive(true);
-        porta_aperta.SetActive(false);
+        portaAperta.SetActive(false);
         playerInTrigger = false;
         counter = 0;
         collider2.SetActive(false);
         messaggioIniziale.SetActive(true);
+
+        RuntimeData.Instance.ApplesDeliveredCount
+            .Where(x => x == 5)
+            .Subscribe(_ => ApriPorta())
+            .AddTo(this);
     }
 
     void Update()
     {
         if (Input.GetKeyDown("e"))
-        {
-            //Time.timeScale = 1f;
             messaggioIniziale.SetActive(false);
 
-        }
-
-        if (playerInTrigger == true && Input.GetKeyDown("e"))
+        if (playerInTrigger && Input.GetKeyDown("e"))
         {
             text.SetActive(true);
             counter++;
@@ -45,36 +47,27 @@ public class InteractionDoor : MonoBehaviour
                 ApriPorta();
             }
         }
-
-        if(CassaCollezionista.count == 5)
-        {
-            ApriPorta();
-        }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
-        {
-            //Debug.Log("diocane");
-            playerInTrigger=true;
-           
-        }
+        if (!other.CompareTag("Player")) return;
+        
+        playerInTrigger=true;
     }
 
     void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
-        {
-            playerInTrigger=false;
-            text.SetActive(false);
-            //text2.SetActive(false);
-        }
+        if (!other.CompareTag("Player")) return;
+        
+        playerInTrigger=false;
+        text.SetActive(false);
+        //text2.SetActive(false);
     }
 
     private void ApriPorta()
     {
-        porta_aperta.SetActive(true);
+        portaAperta.SetActive(true);
         porta.SetActive(false);
         playerInTrigger = false;
     }

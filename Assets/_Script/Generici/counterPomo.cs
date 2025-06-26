@@ -1,20 +1,14 @@
 using TMPro;
 using UnityEngine;
+using UniRx;
 
 public class CounterPomo : MonoBehaviour
 {
-    public TextMeshProUGUI textPunteggio;
-    public int punteggio;
+    private TextMeshProUGUI _appleCountTMP;
 
-    private void Update()
+    void Start()
     {
-        AggiornaPunteggio();
-    }
-
-    private void AggiornaPunteggio()
-    {
-        punteggio = CollectiblesCount.counterOggetti;
-        textPunteggio.text = punteggio.ToString();
+        _appleCountTMP = GetComponent<TextMeshProUGUI>();
+        RuntimeData.Instance.ApplesInInventoryCount.Subscribe(x => _appleCountTMP.text = x.ToString());
     }
 }
-    

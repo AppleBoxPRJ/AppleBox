@@ -1,16 +1,13 @@
-using System;
 using UnityEngine;
 
 public class CassaCollezionista : MonoBehaviour
 {
-    public static event Action DeCollected;
-    public static int count;
-
-    private bool _playerInTrigger;
     [SerializeField] private GameObject text;
-    [SerializeField] private GameObject porta;
+    [SerializeField] private GameObject portaChiusa;
     [SerializeField] private GameObject portaAperta;
     [SerializeField] private Animator animator;
+    
+    private bool _playerInTrigger;
     
     private void Start()
     {
@@ -21,39 +18,13 @@ public class CassaCollezionista : MonoBehaviour
     
     private void Update()
     {
-        count = CollectiblesCount.passaggioDiLivello;
+        if (!_playerInTrigger || RuntimeData.Instance.ApplesInInventoryCount.Value == 0) return;
         
-        if (_playerInTrigger)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E) && CollectiblesCount.counterOggetti > 0)
-            {
-                DeCollected?.Invoke();
-                animator.SetTrigger("StartAnimation"); // Avvia l'animazione
-            }
-            
-            switch (GameHandler.Plevel)
-            {
-                case 1:
-                    if (count == 5)
-                    {
-                        text.gameObject.SetActive(true);
-                    }
-                    break;
-                case 2:
-                    if (count == 8)
-                    {
-                        text.gameObject.SetActive(true);
-                        ApriPorta();
-                    }
-                    break;
-                default:
-                    Debug.Log("vabbe");
-                    break;
-            }
-        }
-        else
-        {
-            text.SetActive(false);
+            RuntimeData.Instance.ApplesInInventoryCount.Value--;
+            RuntimeData.Instance.ApplesDeliveredCount.Value++;
+            animator.SetTrigger("StartAnimation"); // Avvia l'animazione
         }
     }
 
@@ -62,7 +33,7 @@ public class CassaCollezionista : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         _playerInTrigger = true;
-        Debug.Log("ci siamo");
+        text.SetActive(true);
     }
 
     public void OnTriggerExit(Collider other)
@@ -70,11 +41,6 @@ public class CassaCollezionista : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         _playerInTrigger = false;
-    }
-    
-    private void ApriPorta()
-    {
-        portaAperta.SetActive(true);
-        porta.SetActive(false);
+        text.SetActive(false);
     }
 }
