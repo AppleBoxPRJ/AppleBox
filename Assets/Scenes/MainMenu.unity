@@ -268,6 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 107628456}
+  - component: {fileID: 107628457}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -295,6 +296,21 @@ RectTransform:
   m_AnchoredPosition: {x: 341.26, y: -91}
   m_SizeDelta: {x: 682.52, y: 791.06}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &107628457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107628455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af32b2883ed62c24d95e83645da68bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicSlider: {fileID: 0}
+  _sfxSlider: {fileID: 0}
+  _sensSlider: {fileID: 0}
 --- !u!1 &116932468
 GameObject:
   m_ObjectHideFlags: 0
