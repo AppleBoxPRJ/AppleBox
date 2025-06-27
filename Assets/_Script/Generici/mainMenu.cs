@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public void Start()
     {
         settingsMenu.SetActive(false);
+        QualitySettings.SetQualityLevel(1);
     }
     
     public void NewGame()
