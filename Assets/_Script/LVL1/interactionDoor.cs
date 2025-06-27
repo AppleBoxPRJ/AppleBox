@@ -1,6 +1,8 @@
+using System;
 using TMPro;
 using UniRx;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InteractionDoor : MonoBehaviour
 {
@@ -12,40 +14,27 @@ public class InteractionDoor : MonoBehaviour
     
     private bool _playerInTrigger;
     private int _openingTriesCount;
-    
+
+    void OnEnable()
+    {
+        InputBindings.Instance.InteractAction.performed += TryOpenDoor;
+    }
+
+    void OnDisable()
+    {
+        InputBindings.Instance.InteractAction.performed -= TryOpenDoor;
+    }
+
     void Start()
     {
         warningText.gameObject.SetActive(false);
-        
-        portaChiusa.SetActive(true);
         portaAperta.SetActive(false);
-
         secondCollider.gameObject.SetActive(false);
-        startingMessage.SetActive(true);
 
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == 5)
             .Subscribe(_ => ApriPorta())
             .AddTo(this);
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown("e"))
-            startingMessage.SetActive(false);
-
-        if (_playerInTrigger && Input.GetKeyDown("e"))
-        {
-            warningText.gameObject.SetActive(true);
-            _openingTriesCount++;
-            
-            if (_openingTriesCount == 4)
-            {
-                warningText.gameObject.SetActive(false);
-                secondCollider.gameObject.SetActive(true);
-                ApriPorta();
-            }
-        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -61,6 +50,22 @@ public class InteractionDoor : MonoBehaviour
         
         _playerInTrigger=false;
         warningText.gameObject.SetActive(false);
+    }
+
+    private void TryOpenDoor(InputAction.CallbackContext ctx)
+    {
+        if (_playerInTrigger)
+        {
+            warningText.gameObject.SetActive(true);
+            _openingTriesCount++;
+            
+            if (_openingTriesCount >= 4)
+            {
+                warningText.gameObject.SetActive(false);
+                secondCollider.gameObject.SetActive(true);
+                ApriPorta();
+            }
+        }
     }
 
     private void ApriPorta()

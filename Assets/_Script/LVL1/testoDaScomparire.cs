@@ -21,7 +21,7 @@ public class TestoDaScomparire : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         //Debug.Log("diocane");
-        playerInTrigger = true;
+        text.SetActive(true);
     }
 
     void OnTriggerExit(Collider other)

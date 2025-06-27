@@ -1,39 +1,48 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
+    public Transform cameraTransform;
     public float speed = 12f;
     public float gravity = -9.81f;
-    public Vector3 velocity;
-    public Vector2 movementDirection;
-    public Transform cameraTransform;
-    public Vector3 forward;
-    public Vector3 right;
+    
+    private Vector3 velocity;
+    private Vector2 movementDirection;
+    private Vector3 forward;
+    private Vector3 right;
 
     public static Vector3 move;
 
-    public void OnMove(InputAction.CallbackContext context)
+    void OnEnable()
     {
-        movementDirection = context.ReadValue<Vector2>();
+        InputBindings.Instance.MoveAction.performed += Movements;
+        InputBindings.Instance.MoveAction.canceled += Movements;
+    }
+
+    void OnDisable()
+    {
+        InputBindings.Instance.MoveAction.performed -= Movements;
+        InputBindings.Instance.MoveAction.canceled -= Movements;
     }
 
     private void Update()
     {
-        Movements();
-    }
-
-    private void Movements()
-    {        
         forward = cameraTransform.forward;
         right = cameraTransform.right;
-        move = (forward * movementDirection.y + right * movementDirection.x); //new Vector3(-movementDirection.y, 0, -movementDirection.x) * speed * Time.deltaTime;
-        //Debug.Log($"Move Input: {movementDirection}");
+        move = (forward * movementDirection.y + right * movementDirection.x);
+        
         controller.Move(move * (speed * Time.deltaTime));
+        controller.Move(velocity * Time.deltaTime);
+    }
 
+    private void Movements(InputAction.CallbackContext context)
+    {
+        movementDirection = context.ReadValue<Vector2>();
+        
         //gestione della gravita'
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
     }
 }

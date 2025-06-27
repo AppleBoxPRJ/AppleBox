@@ -5,15 +5,18 @@ public class InputBindings : MonoBehaviour
 {
     [SerializeField] private InputActionAsset _inputActionAsset;
 
-    public InputAction moveAction;
-    public InputAction interactAction;
+    public InputAction MoveAction;
+    public InputAction InteractAction;
 
-    void OnEnable()
+    void Awake()
     {
-        moveAction = _inputActionAsset.FindAction("Move");
-        interactAction = _inputActionAsset.FindAction("Interact");
+        MoveAction = _inputActionAsset.FindAction("Move");
+        InteractAction = _inputActionAsset.FindAction("Interact");
         
         _inputActionAsset.Enable();
+        
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
     void OnDisable()
@@ -22,10 +25,4 @@ public class InputBindings : MonoBehaviour
     }
     
     public static InputBindings Instance { get; private set; }
-    
-    void Awake()
-    {
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
 }
