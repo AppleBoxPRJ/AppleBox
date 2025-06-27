@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 1455699641391296129}
   - component: {fileID: 3698429400991933031}
   - component: {fileID: 8772510885058789179}
+  - component: {fileID: 796198543570105844}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -334,7 +335,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &3698429400991933031
 MonoBehaviour:
@@ -376,6 +377,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &796198543570105844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886875764585262621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09cd0d9990c6a145a5ce3900ed951ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuPanel: {fileID: 9005269280803507792}
+  mouseLookComponent: {fileID: 7533263093298498317, guid: 80cae6475919bab45811873158ce375f, type: 3}
+  playerMovementComponent: {fileID: 3892266429305817052, guid: 80cae6475919bab45811873158ce375f, type: 3}
 --- !u!1 &2571283488556789626
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,8 +513,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 796198543570105844}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Home
         m_Mode: 1
         m_Arguments:
@@ -630,8 +646,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 796198543570105844}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
@@ -763,8 +779,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: pauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 796198543570105844}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -928,7 +944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7309567300231357385
 RectTransform:
   m_ObjectHideFlags: 0
@@ -941,9 +957,9 @@ RectTransform:
   m_LocalScale: {x: 0.69594, y: 0.69594, z: 0.69594}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1686140801615695875}
   - {fileID: 8122790119242308900}
   - {fileID: 4995267594791621411}
-  - {fileID: 1686140801615695875}
   m_Father: {fileID: 7252483079326278993}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

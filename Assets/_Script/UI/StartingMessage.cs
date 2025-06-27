@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 public class StartingMessage : MonoBehaviour
 {
     void OnEnable()
@@ -8,13 +8,9 @@ public class StartingMessage : MonoBehaviour
         InputBindings.Instance.InteractAction.performed += Destroy;
     }
 
-    void OnDisable()
-    {
-        InputBindings.Instance.InteractAction.performed  -= Destroy;
-    }
-
     private void Destroy(InputAction.CallbackContext ctx)
     {
         Destroy(gameObject);
+        InputBindings.Instance.InteractAction.performed  -= Destroy;
     }
 }
