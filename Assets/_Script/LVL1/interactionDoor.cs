@@ -6,11 +6,12 @@ using UnityEngine.InputSystem;
 
 public class InteractionDoor : MonoBehaviour
 {
+    [Header("Game Objects")]
     [SerializeField] private GameObject portaChiusa;
     [SerializeField] private GameObject portaAperta;
-    [SerializeField] private TextMeshProUGUI warningText;
     [SerializeField] private Collider secondCollider;
-    [SerializeField] private GameObject startingMessage;
+    [Header("Messages")]
+    [SerializeField] private TextMeshProUGUI warningText;
     
     private bool _playerInTrigger;
     private int _openingTriesCount;
@@ -27,10 +28,6 @@ public class InteractionDoor : MonoBehaviour
 
     void Start()
     {
-        warningText.gameObject.SetActive(false);
-        portaAperta.SetActive(false);
-        secondCollider.gameObject.SetActive(false);
-
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == 5)
             .Subscribe(_ => ApriPorta())
@@ -41,30 +38,29 @@ public class InteractionDoor : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         
-        _playerInTrigger=true;
+        _playerInTrigger = true;
     }
 
     void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
         
-        _playerInTrigger=false;
+        _playerInTrigger = false;
         warningText.gameObject.SetActive(false);
     }
 
     private void TryOpenDoor(InputAction.CallbackContext ctx)
     {
-        if (_playerInTrigger)
-        {
-            warningText.gameObject.SetActive(true);
-            _openingTriesCount++;
+        if (!_playerInTrigger) return;
+        
+        _openingTriesCount++;
+        warningText.gameObject.SetActive(true);
             
-            if (_openingTriesCount >= 4)
-            {
-                warningText.gameObject.SetActive(false);
-                secondCollider.gameObject.SetActive(true);
-                ApriPorta();
-            }
+        if (_openingTriesCount >= 4)
+        {
+            warningText.gameObject.SetActive(false);
+            secondCollider.gameObject.SetActive(true);
+            ApriPorta();
         }
     }
 
