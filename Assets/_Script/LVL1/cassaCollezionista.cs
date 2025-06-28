@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -25,7 +26,7 @@ public class CassaCollezionista : MonoBehaviour
     {
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x >= 5)
-            .Subscribe(_ => gameObject.SetActive(true))
+            .Subscribe(_ => openedDoorMessage.enabled = true)
             .AddTo(this);
     }
 
@@ -35,6 +36,7 @@ public class CassaCollezionista : MonoBehaviour
         
         _playerInTrigger = true;
         appleCounter.SetActive(true);
+        openedDoorMessage.gameObject.SetActive(true);
     }
 
     void OnTriggerExit(Collider other)
@@ -43,6 +45,7 @@ public class CassaCollezionista : MonoBehaviour
         
         _playerInTrigger = false;
         appleCounter.SetActive(false);
+        openedDoorMessage.gameObject.SetActive(false);
     }
 
     private void DepositApple(InputAction.CallbackContext ctx)
@@ -51,6 +54,7 @@ public class CassaCollezionista : MonoBehaviour
         
         RuntimeData.Instance.applesInInventoryCount.Value--;
         RuntimeData.Instance.applesDeliveredCount.Value++;
-        animator.SetTrigger("StartAnimation"); // Avvia l'animazione
+        
+        animator.SetTrigger("StartAnimation");
     }
 }

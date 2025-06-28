@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -31,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         OnEscapePressed();
     }
 
-    public void OnEscapePressed()
+    private void OnEscapePressed()
     {
         _isPaused = !_isPaused;
         
@@ -45,7 +44,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Home()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 
     public void Resume()

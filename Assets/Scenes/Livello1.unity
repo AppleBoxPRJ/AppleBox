@@ -2344,7 +2344,6 @@ GameObject:
   - component: {fileID: 891352579}
   - component: {fileID: 891352578}
   - component: {fileID: 891352582}
-  - component: {fileID: 891352583}
   m_Layer: 0
   m_Name: Cassa
   m_TagString: Untagged
@@ -2456,22 +2455,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 34105945}
-  appleCounter: {fileID: 0}
-  openedDoorMessage: {fileID: 0}
---- !u!114 &891352583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891352577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d22399055310a4ea47fad703db79f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  billboard: {fileID: 1743612577}
-  cassaTrigger: {fileID: 891352577}
+  appleCounter: {fileID: 1743612577}
+  openedDoorMessage: {fileID: 1788010071}
 --- !u!4 &922461614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5968020029030186622, guid: 809d23045da4a4e66a6e21401fa69785, type: 3}
@@ -4736,7 +4721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788010069}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
