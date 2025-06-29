@@ -8,17 +8,17 @@ public class SceneTransitionCall : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1.5f;
     
-    public void changeLevel()
+    public void ChangeLevel()
     {
         PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel + 1);
-        GameHandler.Plevel = GameHandler.Plevel + 1;
+        GameHandler.Plevel++;
         Debug.Log(GameHandler.Plevel);
         int levelIndice = GameHandler.Plevel;
         //SceneManager.LoadScene("Livello" + GameHandler.Plevel);
-        StartCoroutine(loadLevel(levelIndice));
+        StartCoroutine(LoadLevel(levelIndice));
     }
     
-    IEnumerator loadLevel(int levelIndex)
+    IEnumerator LoadLevel(int levelIndex)
     {
         Debug.Log("startCoroutine");
         transition.SetTrigger("start");

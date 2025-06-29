@@ -9,32 +9,28 @@ interface IInteractable
 public class Interactor : MonoBehaviour
 {
     public Transform InteractionSource;
-    public float InteractionRange = 3f;
+    
+    private float _interactionRange = 3f;
 
     private void OnEnable()
     {
         InputBindings.Instance.InteractAction.performed += ShootRaycast;
     }
 
-    void Start()
-    {
-        InteractionRange = 3f;
-    }
-
-    void Update()
-    {
-        if(TestoDaScomparire.playerInTrigger)
-        {
-            InteractionRange = 0f;
-        }
-    }
+    // void Update()
+    // {
+    //     if(TestoDaScomparire.playerInTrigger)
+    //     {
+    //         _interactionRange = 0f;
+    //     }
+    // }
 
     private void ShootRaycast(InputAction.CallbackContext ctx)
     {
         // Crea un ray che viaggia in avanti fino al massimo range
         var r = new Ray(InteractionSource.position, InteractionSource.forward);
             
-        if (Physics.Raycast(r, out RaycastHit hitInfo, InteractionRange))
+        if (Physics.Raycast(r, out RaycastHit hitInfo, _interactionRange))
         {
             // Se collide, prova ad interagire con quello con cui ha colliso
             if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactionObject))

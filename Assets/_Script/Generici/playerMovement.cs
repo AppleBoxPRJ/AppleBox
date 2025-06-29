@@ -1,10 +1,10 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     public static Vector3 move;
+    
     public float speed = 12f;
     public float gravity = -9.81f;
     
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         _characterTransform =  GetComponent<Transform>();
     }
 
-    private void Update()
+    void Update()
     {
         forward = _characterTransform.forward;
         right = _characterTransform.right;
@@ -51,6 +51,5 @@ public class PlayerMovement : MonoBehaviour
     private void Movements(InputAction.CallbackContext context)
     {
         movementDirection = context.ReadValue<Vector2>();
-        
     }
 }

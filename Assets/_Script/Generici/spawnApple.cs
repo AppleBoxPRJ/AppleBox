@@ -1,40 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnApple : MonoBehaviour
 {
-    public GameObject melaPrefab;
-    public float asseY = 0.3f;
-    public int lvlCount;
+    [SerializeField] private GameObject melaPrefab;
 
+    private LevelConfiguration _levelConfiguration;
+    
     private void Start()
     {
-        lvlCount = GameHandler.Plevel;
+        _levelConfiguration = BuildtimeData.Instance.LevelConfiguration;
         PlayerLevelStart();
-        
     }
 
     private void PlayerLevelStart()
     {
-        switch (lvlCount)
+        for (int i = 0; i < _levelConfiguration.appleToSpawn; i++)
         {
-            case 1: 
-                for (int i = 0; i <= 4; i++)
-                {
-                    Vector3 randomSpawnPosition = new Vector3(Random.Range(-110, -160), 0.30f, Random.Range(-5, 32));
-                    Instantiate(melaPrefab, randomSpawnPosition, Quaternion.identity);
-                }
-                break;
-            case 2 :
-                for (int i = 0; i <= 9; i++)
-                {
-                    Vector3 randomSpawnPosition = new Vector3(Random.Range(-110, -160), 0.30f, Random.Range(-37, 67));
-                    Instantiate(melaPrefab, randomSpawnPosition, Quaternion.identity);
-                }
-                break;
-            default:
-                break;
+            var x = Random.Range(-110, -160);
+            var y = 0.30f;
+            var z = Random.Range(_levelConfiguration.appleSpawnRange.x, _levelConfiguration.appleSpawnRange.y);
+            var randomSpawnPosition = new Vector3(x, y, z);
+            
+            Instantiate(melaPrefab, randomSpawnPosition, Quaternion.identity);
         }
     }
 }

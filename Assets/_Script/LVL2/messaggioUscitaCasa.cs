@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MessaggioUscitaCasa : MonoBehaviour
 {
-    public GameObject messaggio;
-    public GameObject portaChiusa;
+    [SerializeField] private GameObject messaggio;
+    [SerializeField] private GameObject portaChiusa;
 
     void Start()
     {
@@ -21,7 +21,8 @@ public class MessaggioUscitaCasa : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         messaggio.SetActive(false);
-        Destroy(gameObject);
         portaChiusa.SetActive(true);
+        
+        Destroy(gameObject);
     }
 }

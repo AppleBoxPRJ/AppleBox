@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -25,7 +24,7 @@ public class CassaCollezionista : MonoBehaviour
     private void Start()
     {
         RuntimeData.Instance.applesDeliveredCount
-            .Where(x => x >= 5)
+            .Where(x => x >= BuildtimeData.Instance.LevelConfiguration.appleToCollect)
             .Subscribe(_ => openedDoorMessage.enabled = true)
             .AddTo(this);
     }
