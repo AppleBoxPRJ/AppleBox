@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1186176075547535972}
   - component: {fileID: 3325966854873523579}
   - component: {fileID: 3892266429305817052}
-  - component: {fileID: 7970785527659615713}
+  - component: {fileID: 7533263093298498317}
   - component: {fileID: 4807202584289230762}
   m_Layer: 0
   m_Name: Character
@@ -74,15 +74,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29443eb0d6eee7949bfb2055df17a0eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 3325966854873523579}
   speed: 12
   gravity: -9.81
-  velocity: {x: 0, y: 0, z: 0}
-  movementDirection: {x: 0, y: 0}
-  cameraTransform: {fileID: 5488236561541169903}
-  forward: {x: 0, y: 0, z: 0}
-  right: {x: 0, y: 0, z: 0}
---- !u!114 &7970785527659615713
+--- !u!114 &7533263093298498317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,11 +85,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2523343152168812900}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a09cd0d9990c6a145a5ce3900ed951ba, type: 3}
+  m_Script: {fileID: 11500000, guid: e54f682c1c5eaa440b99ddb341575549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuPrefab: {fileID: 0}
-  otherCanva: {fileID: 0}
+  _mouseSens: 1
+  _cameratransform: {fileID: 5488236561541169903}
 --- !u!114 &4807202584289230762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,10 +207,9 @@ GameObject:
   - component: {fileID: 5488236561541169903}
   - component: {fileID: 9093551857796900627}
   - component: {fileID: 4266144046800953499}
-  - component: {fileID: 4477906551158762464}
   - component: {fileID: 2234198064742756110}
-  - component: {fileID: 4528928757781766660}
   - component: {fileID: 6297439380753183162}
+  - component: {fileID: 4528928757781766660}
   - component: {fileID: 1554891755395725156}
   m_Layer: 0
   m_Name: Camera
@@ -303,21 +296,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3543567316916388001}
   m_Enabled: 1
---- !u!114 &4477906551158762464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3543567316916388001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e54f682c1c5eaa440b99ddb341575549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSens: 400
-  PlayerBody: {fileID: 1186176075547535972}
-  xRotation: 0
 --- !u!114 &2234198064742756110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,6 +310,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractionSource: {fileID: 5488236561541169903}
   InteractionRange: 3
+--- !u!114 &6297439380753183162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3543567316916388001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb87bac7b8c1d143a5a22a1a343989c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobbing: {fileID: 4528928757781766660}
 --- !u!95 &4528928757781766660
 Animator:
   serializedVersion: 7
@@ -354,19 +345,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6297439380753183162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3543567316916388001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb87bac7b8c1d143a5a22a1a343989c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bobbing: {fileID: 4528928757781766660}
 --- !u!222 &1554891755395725156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -392,7 +370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3658570785581213731
 Transform:
   m_ObjectHideFlags: 0
@@ -423,7 +401,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6783453659627731921}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

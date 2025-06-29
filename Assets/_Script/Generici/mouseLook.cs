@@ -2,23 +2,23 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    public float mouseSens = 400f;
-    public Transform PlayerBody;
+    [SerializeField] private float _mouseSens = 1f;
+    [SerializeField] private Transform _cameratransform;
 
-    public float xRotation = 0f;
+    private float pitch;
     
     void Update()
     {
-        //get axis to watch
-        float mouseX = Input.GetAxis("Mouse X") * mouseSens * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSens * Time.deltaTime;
-        
-        //setup Y field of view
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-        
-        //actual view movement
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        PlayerBody.Rotate(Vector3.up * mouseX);
+        ProcessLook();
+    }
+
+    private void ProcessLook() {
+        var lookInput = InputBindings.Instance.LookAction.ReadValue<Vector2>();
+
+        pitch += lookInput.y * _mouseSens * -1f;
+        pitch = Mathf.Clamp(pitch, -89, 89);
+
+        _cameratransform.localRotation = Quaternion.Euler(pitch, 0, 0);
+        transform.Rotate(Vector3.up * (lookInput.x * _mouseSens));
     }
 }

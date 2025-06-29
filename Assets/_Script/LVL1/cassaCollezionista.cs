@@ -1,29 +1,33 @@
+using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UniRx;
 
 public class CassaCollezionista : MonoBehaviour
 {
-    [SerializeField] private GameObject text;
     [SerializeField] private Animator animator;
+    [SerializeField] private GameObject appleCounter;
+    [SerializeField] private TextMeshProUGUI openedDoorMessage;
     
     private bool _playerInTrigger;
-    
-    void Start()
+
+    private void OnEnable()
     {
-        text.SetActive(false);
-        _playerInTrigger = false;
-        Debug.Log("Livello: " + GameHandler.Plevel);
+        InputBindings.Instance.InteractAction.performed += DepositApple;
     }
     
-    void Update()
+    private void OnDisable()
     {
-        if (!_playerInTrigger || RuntimeData.Instance.applesInInventoryCount.Value == 0) return;
-        
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            RuntimeData.Instance.applesInInventoryCount.Value--;
-            RuntimeData.Instance.applesDeliveredCount.Value++;
-            animator.SetTrigger("StartAnimation"); // Avvia l'animazione
-        }
+        InputBindings.Instance.InteractAction.performed -= DepositApple;
+    }
+
+    private void Start()
+    {
+        RuntimeData.Instance.applesDeliveredCount
+            .Where(x => x >= 5)
+            .Subscribe(_ => openedDoorMessage.enabled = true)
+            .AddTo(this);
     }
 
     void OnTriggerEnter(Collider other)
@@ -31,7 +35,8 @@ public class CassaCollezionista : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         _playerInTrigger = true;
-        text.SetActive(true);
+        appleCounter.SetActive(true);
+        openedDoorMessage.gameObject.SetActive(true);
     }
 
     void OnTriggerExit(Collider other)
@@ -39,6 +44,17 @@ public class CassaCollezionista : MonoBehaviour
         if (!other.CompareTag("Player")) return;
         
         _playerInTrigger = false;
-        text.SetActive(false);
+        appleCounter.SetActive(false);
+        openedDoorMessage.gameObject.SetActive(false);
+    }
+
+    private void DepositApple(InputAction.CallbackContext ctx)
+    {
+        if (!_playerInTrigger || RuntimeData.Instance.applesInInventoryCount.Value == 0) return;
+        
+        RuntimeData.Instance.applesInInventoryCount.Value--;
+        RuntimeData.Instance.applesDeliveredCount.Value++;
+        
+        animator.SetTrigger("StartAnimation");
     }
 }
