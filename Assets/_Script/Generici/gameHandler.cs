@@ -1,10 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameHandler : MonoBehaviour
 {
     public static int Plevel;
-    public GameObject continueButton;
     
     void Start()
     {
@@ -19,18 +17,6 @@ public class GameHandler : MonoBehaviour
         {
             PlayerPrefs.SetInt("PlayerLevel", 0);
             Plevel = 0;
-        }
-    }
-
-    public void NoSaveData()
-    {
-        if (Plevel == 0)
-        {
-            continueButton.GetComponent<Button>().interactable = false;
-        }
-        else
-        {
-            continueButton.GetComponent<Button>().interactable = true;
         }
     }
 }

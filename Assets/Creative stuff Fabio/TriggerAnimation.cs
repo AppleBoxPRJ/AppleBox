@@ -26,7 +26,7 @@ public class TriggerAnimation : MonoBehaviour
             if (playerAnimator != null)
             {
                 playerAnimator.enabled = true;
-                //changeLevel();
+                //ChangeLevel();
                 //playerAnimator.enabled = false;
             }
             else

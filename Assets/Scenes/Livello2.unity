@@ -745,8 +745,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   melaPrefab: {fileID: 1722631530216219230, guid: e40d8d72ab776064ebe236fc96fca05b, type: 3}
-  asseY: -0.25
-  lvlCount: 0
 --- !u!1 &290745151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,7 +2774,6 @@ GameObject:
   - component: {fileID: 891352579}
   - component: {fileID: 891352578}
   - component: {fileID: 891352582}
-  - component: {fileID: 891352583}
   m_Layer: 0
   m_Name: cassa
   m_TagString: Untagged
@@ -2887,24 +2884,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d0dff80b6049f4a8ad047afb112448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 961494597}
-  porta: {fileID: 479858165}
-  portaAperta: {fileID: 0}
   animator: {fileID: 553187364}
---- !u!114 &891352583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891352577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8d22399055310a4ea47fad703db79f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  billboard: {fileID: 1219584629}
-  cassaTrigger: {fileID: 891352577}
+  appleCounter: {fileID: 0}
+  openedDoorMessage: {fileID: 0}
 --- !u!1 &961494597
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,8 +3081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd9ad249e3958d45b43da53b7fd93bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textPunteggio: {fileID: 989571566}
-  punteggio: 0
+  _appleCountTMP: {fileID: 0}
 --- !u!114 &989571566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4089,11 +4070,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 486964081304949345, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
   m_PrefabInstance: {fileID: 1215626067}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1219584629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 938172190475110315, guid: bc68814df391af64ab3d15aac64a75b2, type: 3}
-  m_PrefabInstance: {fileID: 325053537}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1238438313
 PrefabInstance:
@@ -5554,7 +5530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1734c1c4b87e12f4997f7e8ab31ccef6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInTrigger: 0
   animator: {fileID: 5822174862524710695}
   transitionTime: 1.5
 --- !u!65 &1903308729

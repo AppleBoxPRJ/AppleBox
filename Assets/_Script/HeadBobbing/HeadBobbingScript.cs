@@ -2,33 +2,20 @@ using UnityEngine;
 
 public class headBobbingScript : MonoBehaviour
 {
-    public Animator bobbing;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Animator _animator;
+
     void Start()
     {
-        bobbing = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (PlayerMovement.move.magnitude >= 0.1f)
-        {
-            startBobbing();
-        }else
-        {
-            stopBobbing();
-        }
-
+        SetBobbing(PlayerMovement.move.magnitude >= 0.1f);
     }
 
-    public void startBobbing()
+    private void SetBobbing(bool bobbing)
     {
-        bobbing.SetBool("bobbing", true);
-    }
-
-    public void stopBobbing()
-    {
-        bobbing.SetBool("bobbing", false);
+        _animator.SetBool("bobbing", bobbing);
     }
 }

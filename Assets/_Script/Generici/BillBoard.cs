@@ -1,28 +1,27 @@
 using UnityEngine;
 using TMPro;
+using UniRx;
 
 public class Billboard : MonoBehaviour
 {
-    public Transform playerTransform;
-    public TextMeshPro appleText;
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private TextMeshPro appleText;
+
+    void Start()
+    {
+        RuntimeData.Instance.applesDeliveredCount
+            .Subscribe(UpdateText)
+            .AddTo(this);
+    }
     
     void Update()
     {
         // Mantiene il billboard rivolto verso la telecamera
         transform.LookAt(transform.position + playerTransform.rotation * Vector3.forward, playerTransform.rotation * Vector3.up);
+    }
 
-        // Aggiorna il testo con il valore di count
-        switch (GameHandler.Plevel)
-        {
-            case 1:
-                appleText.text = "x " + RuntimeData.Instance.applesDeliveredCount.Value + " / 5";
-                break;
-            case 2:
-                appleText.text = "x " + RuntimeData.Instance.applesDeliveredCount.Value + " / 8";
-                break;
-            default:
-                Debug.Log("vabbe");
-                break;
-        }
+    private void UpdateText(int value)
+    {
+        appleText.text = "x " + value + " / " + BuildtimeData.Instance.LevelConfiguration.appleToCollect;
     }
 }

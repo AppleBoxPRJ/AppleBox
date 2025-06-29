@@ -15,3 +15,4 @@ MonoBehaviour:
   levelId: 2
   appleToSpawn: 10
   appleToCollect: 8
+  appleSpawnRange: {x: -37, y: 67}

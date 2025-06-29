@@ -1,57 +1,53 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class InteratoreLetto : MonoBehaviour
 {
-    public bool playerInTrigger;
-    public Animator animator;
-    public float transitionTime = 1.5f;
+    [SerializeField] private Animator animator;
+    [SerializeField] private float transitionTime = 1.5f;
 
-    public void Awake()
+    private bool _playerInTrigger;
+
+    void OnEnable()
     {
-        playerInTrigger = false;
-        Debug.Log(GameHandler.Plevel);
+        InputBindings.Instance.InteractAction.performed += OnGoToBed;
+    }
+    
+    void OnDisable()
+    {
+        InputBindings.Instance.InteractAction.performed -= OnGoToBed;
+    }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if (!other.CompareTag("Player")) return;
+        
+        _playerInTrigger = true;
     }
 
-    public void OnTriggerEnter(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("ci siamo");
-            playerInTrigger = true;
-
-        }
+        if (!other.CompareTag("Player")) return;
+        
+        _playerInTrigger = false;
     }
 
-    public void OnTriggerExit(Collider other)
+    private void OnGoToBed(InputAction.CallbackContext context)
     {
-        if (other.CompareTag("Player"))
+        if (!_playerInTrigger) return;
+    
+        if (RuntimeData.Instance.applesDeliveredCount.Value != 0)
         {
-            playerInTrigger = false;
+                GameHandler.Plevel++;
+                PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel);
+                StartCoroutine(LoadLevel(GameHandler.Plevel));
         }
-    }
-
-    public void Update()
-    {
-        if (playerInTrigger && RuntimeData.Instance.applesDeliveredCount.Value != 0)
+        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2)
         {
-            if (Input.GetKeyDown("e"))
-            {
-                PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel + 1);
-                GameHandler.Plevel = GameHandler.Plevel + 1;
-                Debug.Log(GameHandler.Plevel);
-                int levelIndice = GameHandler.Plevel;
-                StartCoroutine(LoadLevel(levelIndice));
-            }
-        }
-
-        if (playerInTrigger && RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2)
-        {
-            if (Input.GetKeyDown("e"))
-            {
                 SceneManager.LoadScene("Finale_Segreto1");
-            }
         }
     }
 

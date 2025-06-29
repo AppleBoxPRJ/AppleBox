@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UniRx;
 using UnityEngine;
@@ -29,7 +28,7 @@ public class InteractionDoor : MonoBehaviour
     void Start()
     {
         RuntimeData.Instance.applesDeliveredCount
-            .Where(x => x == 5)
+            .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
             .Subscribe(_ => ApriPorta())
             .AddTo(this);
     }

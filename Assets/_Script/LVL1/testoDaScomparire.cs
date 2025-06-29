@@ -2,25 +2,13 @@ using UnityEngine;
 
 public class TestoDaScomparire : MonoBehaviour
 {
-    public static bool playerInTrigger;
-    public GameObject text;
-    public GameObject collisore;
-
-    void Start()
-    {
-        text.SetActive(false);
-    }
-
-    void Update()
-    {
-        text.SetActive(playerInTrigger);
-    }
-
+    [SerializeField] private GameObject text;
+    [SerializeField] private GameObject collisore;
+    
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;
         
-        //Debug.Log("diocane");
         text.SetActive(true);
     }
 
@@ -28,9 +16,7 @@ public class TestoDaScomparire : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         
-        playerInTrigger = false;
         text.SetActive(false);
         collisore.SetActive(false);
-        //text2.SetActive(false);
     }
 }
