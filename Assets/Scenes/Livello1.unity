@@ -5503,12 +5503,20 @@ PrefabInstance:
       value: Move
       objectReference: {fileID: 0}
     - target: {fileID: 2651512613105554579, guid: c65d4bf3d64fa4f5888acbde8b214b52, type: 3}
+      propertyPath: CancelAction.m_Name
+      value: Cancel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651512613105554579, guid: c65d4bf3d64fa4f5888acbde8b214b52, type: 3}
+      propertyPath: SubmitAction.m_Name
+      value: Submit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651512613105554579, guid: c65d4bf3d64fa4f5888acbde8b214b52, type: 3}
       propertyPath: InteractAction.m_Name
       value: Interact
       objectReference: {fileID: 0}
     - target: {fileID: 4477275653048933084, guid: c65d4bf3d64fa4f5888acbde8b214b52, type: 3}
       propertyPath: m_Name
-      value: InputBindingProvider
+      value: InputBinding
       objectReference: {fileID: 0}
     - target: {fileID: 8510772701308156536, guid: c65d4bf3d64fa4f5888acbde8b214b52, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5936,7 +5944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3681624288844468785, guid: 809d23045da4a4e66a6e21401fa69785, type: 3}
       propertyPath: m_Name
-      value: RuntimeDataProvider
+      value: RuntimeData
       objectReference: {fileID: 0}
     - target: {fileID: 5968020029030186622, guid: 809d23045da4a4e66a6e21401fa69785, type: 3}
       propertyPath: m_LocalPosition.x

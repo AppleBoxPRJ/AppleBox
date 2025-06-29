@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputBindings : MonoBehaviour
+public class InputBindings : Singleton<InputBindings>
 {
     [SerializeField] private InputActionAsset _inputActionAsset;
 
@@ -14,8 +14,10 @@ public class InputBindings : MonoBehaviour
     public InputAction SubmitAction;
     public InputAction CancelAction;
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        
         MoveAction = _inputActionAsset.FindAction("Move");
         LookAction = _inputActionAsset.FindAction("Look");
         InteractAction = _inputActionAsset.FindAction("Interact");
@@ -24,15 +26,10 @@ public class InputBindings : MonoBehaviour
         CancelAction = _inputActionAsset.FindAction("Cancel");
         
         _inputActionAsset.Enable();
-        
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
     }
 
     void OnDisable()
     {
         _inputActionAsset.Disable();
     }
-    
-    public static InputBindings Instance { get; private set; }
 }
