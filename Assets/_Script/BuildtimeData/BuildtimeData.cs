@@ -1,4 +1,4 @@
 public class BuildtimeData : Singleton<BuildtimeData>
 {
-    public readonly LevelConfiguration LevelConfiguration;
+    public LevelConfiguration LevelConfiguration;
 }
