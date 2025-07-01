@@ -14,11 +14,6 @@ public class PauseMenu : MonoBehaviour
     {
         InputBindings.Instance.CancelAction.performed += OnEscapePressed;
     }
-    
-    void OnDisable()
-    {
-        InputBindings.Instance.CancelAction.performed -= OnEscapePressed;
-    }
 
     void Start()
     {

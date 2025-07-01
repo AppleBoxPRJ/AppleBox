@@ -1,32 +1,16 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UniRx;
 
 public class CassaCollezionista : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject appleCounter;
-    [SerializeField] private TextMeshProUGUI openedDoorMessage;
     
     private bool _playerInTrigger;
 
     private void OnEnable()
     {
         InputBindings.Instance.InteractAction.performed += DepositApple;
-    }
-    
-    private void OnDisable()
-    {
-        InputBindings.Instance.InteractAction.performed -= DepositApple;
-    }
-
-    private void Start()
-    {
-        RuntimeData.Instance.applesDeliveredCount
-            .Where(x => x >= BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .Subscribe(_ => openedDoorMessage.enabled = true)
-            .AddTo(this);
     }
 
     void OnTriggerEnter(Collider other)
@@ -35,7 +19,6 @@ public class CassaCollezionista : MonoBehaviour
         
         _playerInTrigger = true;
         appleCounter.SetActive(true);
-        openedDoorMessage.gameObject.SetActive(true);
     }
 
     void OnTriggerExit(Collider other)
@@ -44,7 +27,6 @@ public class CassaCollezionista : MonoBehaviour
         
         _playerInTrigger = false;
         appleCounter.SetActive(false);
-        openedDoorMessage.gameObject.SetActive(false);
     }
 
     private void DepositApple(InputAction.CallbackContext ctx)

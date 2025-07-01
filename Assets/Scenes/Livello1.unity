@@ -2454,7 +2454,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 34105945}
   appleCounter: {fileID: 1743612577}
-  openedDoorMessage: {fileID: 1788010071}
 --- !u!1 &972446588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 235773896250578124, guid: 0fda2ae1837093047a4f9a7e26f89c45, type: 3}
@@ -4687,7 +4686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1788010070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4815,9 +4814,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1788010069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05f4c74b6acb74ea58ba6004ee215212, type: 3}
+  m_Script: {fileID: 11500000, guid: 242206dcc6bb7456f9ba9b998631b52f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collider: {fileID: 891352578}
 --- !u!1 &1888537135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 7887da80634b68a4daf16149370eaf77, type: 3}

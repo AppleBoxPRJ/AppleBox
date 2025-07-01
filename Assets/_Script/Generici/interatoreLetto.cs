@@ -16,11 +16,6 @@ public class InteratoreLetto : MonoBehaviour
         InputBindings.Instance.InteractAction.performed += OnGoToBed;
     }
     
-    void OnDisable()
-    {
-        InputBindings.Instance.InteractAction.performed -= OnGoToBed;
-    }
-    
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Player")) return;

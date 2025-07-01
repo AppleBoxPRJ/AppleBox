@@ -20,11 +20,6 @@ public class InteractionDoor : MonoBehaviour
         InputBindings.Instance.InteractAction.performed += TryOpenDoor;
     }
 
-    void OnDisable()
-    {
-        InputBindings.Instance.InteractAction.performed -= TryOpenDoor;
-    }
-
     void Start()
     {
         RuntimeData.Instance.applesDeliveredCount
