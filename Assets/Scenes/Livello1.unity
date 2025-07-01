@@ -302,6 +302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -450,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -577,6 +585,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1202,6 +1214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1385,6 +1401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1458,6 +1478,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1684,6 +1708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1827,7 +1855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f77c72aaa6bd5814aa52d9e02392b243, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -181.02
+      value: -180.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f77c72aaa6bd5814aa52d9e02392b243, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2067,6 +2095,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2681,6 +2713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2858,6 +2894,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3224,6 +3264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3399,6 +3443,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3585,6 +3633,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3797,6 +3849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3871,6 +3927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3936,6 +3996,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4147,6 +4211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roccia (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4273,6 +4341,10 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5065,6 +5137,18 @@ PrefabInstance:
     - target: {fileID: 975552604824013019, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
       propertyPath: m_Name
       value: roccia (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.206936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984033885419557276, guid: a6585903489b9a743ae7714d0dd5ce1c, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
