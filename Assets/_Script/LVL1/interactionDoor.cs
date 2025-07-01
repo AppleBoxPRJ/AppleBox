@@ -8,11 +8,12 @@ public class InteractionDoor : MonoBehaviour
     [Header("Game Objects")]
     [SerializeField] private GameObject portaChiusa;
     [SerializeField] private GameObject portaAperta;
-    [SerializeField] private Collider secondCollider;
     [Header("Messages")]
     [SerializeField] private TextMeshProUGUI warningText;
+    [SerializeField] private TextMeshProUGUI tomorrowText;
     
-    private bool _playerInTrigger;
+    private bool _isPlayerInTrigger;
+    private bool _canForceDoor =  true;
     private int _openingTriesCount;
 
     void OnEnable()
@@ -24,7 +25,7 @@ public class InteractionDoor : MonoBehaviour
     {
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .Subscribe(_ => ApriPorta())
+            .Subscribe(_ => OpenDoor())
             .AddTo(this);
     }
 
@@ -32,36 +33,43 @@ public class InteractionDoor : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         
-        _playerInTrigger = true;
+        _isPlayerInTrigger = true;
     }
 
     void OnTriggerExit(Collider other)
     {
         if (!other.CompareTag("Player")) return;
         
-        _playerInTrigger = false;
-        warningText.gameObject.SetActive(false);
+        _isPlayerInTrigger = false;
+        _canForceDoor = true;
+        
+        warningText.enabled = false;
+        tomorrowText.enabled = false;
     }
 
     private void TryOpenDoor(InputAction.CallbackContext ctx)
     {
-        if (!_playerInTrigger) return;
+        if (!_isPlayerInTrigger) return;
+        if (!_canForceDoor) return;
         
+        _canForceDoor = false;
         _openingTriesCount++;
-        warningText.gameObject.SetActive(true);
             
-        if (_openingTriesCount >= 4)
+        switch (_openingTriesCount)
         {
-            warningText.gameObject.SetActive(false);
-            secondCollider.gameObject.SetActive(true);
-            ApriPorta();
+            case < 3:
+                warningText.enabled = true;
+                break;
+            case 3:
+                tomorrowText.enabled = true;
+                OpenDoor();
+                break;
         }
     }
 
-    private void ApriPorta()
+    private void OpenDoor()
     {
         portaAperta.SetActive(true);
         portaChiusa.SetActive(false);
-        _playerInTrigger = false;
     }
 }

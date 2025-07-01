@@ -23,12 +23,6 @@ public class PlayerMovement : MonoBehaviour
         InputBindings.Instance.MoveAction.canceled += Movements;
     }
 
-    void OnDisable()
-    {
-        InputBindings.Instance.MoveAction.performed -= Movements;
-        InputBindings.Instance.MoveAction.canceled -= Movements;
-    }
-
     void Start()
     {
         _characterController =  GetComponent<CharacterController>();
