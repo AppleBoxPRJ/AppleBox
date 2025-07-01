@@ -1,9 +1,10 @@
+using System.Collections;
 using TMPro;
 using UniRx;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InteractionDoor : MonoBehaviour
+public class InteractionDoor : MonoBehaviour, IInteractable
 {
     [Header("Game Objects")]
     [SerializeField] private GameObject portaChiusa;
@@ -15,11 +16,8 @@ public class InteractionDoor : MonoBehaviour
     private bool _isPlayerInTrigger;
     private bool _canForceDoor =  true;
     private int _openingTriesCount;
-
-    void OnEnable()
-    {
-        InputBindings.Instance.InteractAction.performed += TryOpenDoor;
-    }
+    private Collider _collider;
+    
 
     void Start()
     {
@@ -27,29 +25,12 @@ public class InteractionDoor : MonoBehaviour
             .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
             .Subscribe(_ => OpenDoor())
             .AddTo(this);
+        
+        _collider = GetComponent<Collider>();
     }
 
-    void OnTriggerEnter(Collider other)
+    public void Interact()
     {
-        if (!other.CompareTag("Player")) return;
-        
-        _isPlayerInTrigger = true;
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (!other.CompareTag("Player")) return;
-        
-        _isPlayerInTrigger = false;
-        _canForceDoor = true;
-        
-        warningText.enabled = false;
-        tomorrowText.enabled = false;
-    }
-
-    private void TryOpenDoor(InputAction.CallbackContext ctx)
-    {
-        if (!_isPlayerInTrigger) return;
         if (!_canForceDoor) return;
         
         _canForceDoor = false;
@@ -58,10 +39,10 @@ public class InteractionDoor : MonoBehaviour
         switch (_openingTriesCount)
         {
             case < 3:
-                warningText.enabled = true;
+                StartCoroutine(ShowMessage(warningText));
                 break;
             case 3:
-                tomorrowText.enabled = true;
+                StartCoroutine(ShowMessage(tomorrowText));
                 OpenDoor();
                 break;
         }
@@ -71,5 +52,15 @@ public class InteractionDoor : MonoBehaviour
     {
         portaAperta.SetActive(true);
         portaChiusa.SetActive(false);
+        _collider.enabled = false;
+    }
+
+
+    private IEnumerator ShowMessage(TextMeshProUGUI message)
+    {
+        message.enabled = true;
+        yield return new WaitForSeconds(1.5f);
+        message.enabled = false;
+        _canForceDoor = true;
     }
 }

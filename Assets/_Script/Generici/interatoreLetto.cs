@@ -4,17 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class InteratoreLetto : MonoBehaviour
+public class InteratoreLetto : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator animator;
     [SerializeField] private float transitionTime = 1.5f;
 
     private bool _playerInTrigger;
-
-    void OnEnable()
-    {
-        InputBindings.Instance.InteractAction.performed += OnGoToBed;
-    }
+    
     
     void OnTriggerEnter(Collider other)
     {
@@ -30,7 +26,7 @@ public class InteratoreLetto : MonoBehaviour
         _playerInTrigger = false;
     }
 
-    private void OnGoToBed(InputAction.CallbackContext context)
+    public void Interact()
     {
         if (!_playerInTrigger) return;
     

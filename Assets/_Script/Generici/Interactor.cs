@@ -15,7 +15,7 @@ public class Interactor : MonoBehaviour
     [Header("icons")] 
     [SerializeField] private Image _crosshair;
     [SerializeField] private Image _hand;
-
+    public static bool flag;
     private Ray r;
 
     private void OnEnable()

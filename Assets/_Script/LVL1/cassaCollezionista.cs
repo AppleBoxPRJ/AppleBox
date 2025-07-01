@@ -1,17 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CassaCollezionista : MonoBehaviour
+public class CassaCollezionista : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject appleCounter;
     
     private bool _playerInTrigger;
-
-    private void OnEnable()
-    {
-        InputBindings.Instance.InteractAction.performed += DepositApple;
-    }
+    private IInteractable _iInteractableImplementation;
+    
 
     void OnTriggerEnter(Collider other)
     {
@@ -29,7 +26,7 @@ public class CassaCollezionista : MonoBehaviour
         appleCounter.SetActive(false);
     }
 
-    private void DepositApple(InputAction.CallbackContext ctx)
+    public void Interact()
     {
         if (!_playerInTrigger || RuntimeData.Instance.applesInInventoryCount.Value == 0) return;
         

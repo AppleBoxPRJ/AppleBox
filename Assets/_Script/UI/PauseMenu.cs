@@ -1,3 +1,4 @@
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,9 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private MouseLook mouseLookComponent;
     [SerializeField] private PlayerMovement playerMovementComponent;
     
-    private bool _isPaused = true;
+    private bool _isPaused;
+    
+    
 
     void OnEnable()
     {
@@ -17,7 +20,8 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        OnEscapePressed();
+        //OnEscapePressed();
+        pauseMenuPanel.SetActive(false);
     }
 
     private void OnEscapePressed(InputAction.CallbackContext context)
@@ -33,8 +37,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = _isPaused;
         pauseMenuPanel.SetActive(_isPaused);
         
-        mouseLookComponent.enabled = !_isPaused;
-        playerMovementComponent.enabled = !_isPaused;
+        suca(!_isPaused);
     }
 
     public void Home()
@@ -50,5 +53,12 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void suca(bool merda)
+    {
+        mouseLookComponent.enabled = merda;
+        playerMovementComponent.enabled = merda;
+        
     }
 }
