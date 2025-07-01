@@ -11,7 +11,7 @@ public class SettingsScript : MonoBehaviour
     [SerializeField] private Slider SFXVolumeSlider;
     
     [Header("Other Settings")]
-    [SerializeField] private GameObject resolutionDropdown;
+    //[SerializeField] private GameObject resolutionDropdown;
     [SerializeField] private Slider sensSlider;
 
     
@@ -20,7 +20,7 @@ public class SettingsScript : MonoBehaviour
 
     private void Start()
     {
-        resolutionDropdown.GetComponent<Dropdown>();
+        //resolutionDropdown.GetComponent<Dropdown>();
         musicVolumeSlider.value = musicVolume;
         SFXVolumeSlider.value = sFXVolume;
     }
@@ -37,8 +37,8 @@ public class SettingsScript : MonoBehaviour
         gameMixer.SetFloat("sfxVolume", Mathf.Log10(sFXVolume) * 20); 
     }
 
-    public void SetResolution(int index)
-    {
-        QualitySettings.SetQualityLevel(index);
-    }
+    //public void SetResolution(int index)
+    //{
+    //    QualitySettings.SetQualityLevel(index);
+    //}
 }
