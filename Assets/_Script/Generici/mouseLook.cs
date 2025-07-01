@@ -1,14 +1,17 @@
+using System;
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    [SerializeField] private float _mouseSens = 1f;
+    [SerializeField] private float _mouseSens;
     [SerializeField] private Transform _cameratransform;
+    [SerializeField] private SettingsScript _settings;
 
     private float pitch;
-    
+
     void Update()
     {
+        _mouseSens = _settings.sens;
         ProcessLook();
     }
 

@@ -600,7 +600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100.25392, y: -74.00003}
+  m_AnchoredPosition: {x: 100.25392, y: -100}
   m_SizeDelta: {x: 332.865, y: 32.873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3745248754987393341
@@ -647,13 +647,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1515087044889118763}
   m_HandleRect: {fileID: 5423475531787997746}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.3
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.3
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5299987435756672633}
+        m_TargetAssemblyTypeName: SettingsScript, Assembly-CSharp
+        m_MethodName: SetSens
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3035027013968671028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1899,3 +1911,4 @@ MonoBehaviour:
   musicVolumeSlider: {fileID: 2076053607857285733}
   SFXVolumeSlider: {fileID: 3416230922330394261}
   sensSlider: {fileID: 3745248754987393341}
+  sens: 1

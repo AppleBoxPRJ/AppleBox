@@ -17,12 +17,14 @@ public class SettingsScript : MonoBehaviour
     
     public static float musicVolume = 1;
     public static float sFXVolume = 1;
+    public float sens = 1;
 
     private void Start()
     {
         //resolutionDropdown.GetComponent<Dropdown>();
         musicVolumeSlider.value = musicVolume;
         SFXVolumeSlider.value = sFXVolume;
+        sensSlider.value = sens;
     }
 
     public void SetMusicVolume()
@@ -35,6 +37,11 @@ public class SettingsScript : MonoBehaviour
     {
         sFXVolume = SFXVolumeSlider.value;
         gameMixer.SetFloat("sfxVolume", Mathf.Log10(sFXVolume) * 20); 
+    }
+
+    public void SetSens()
+    {
+        sens = sensSlider.value;
     }
 
     //public void SetResolution(int index)
