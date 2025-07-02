@@ -877,7 +877,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1905432792954583202, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
   m_PrefabInstance: {fileID: 4961954627594875416}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1581156743}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af32b2883ed62c24d95e83645da68bc2, type: 3}
@@ -2482,6 +2482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 34105945}
   appleCounter: {fileID: 1743612577}
+  doorOpenedText: {fileID: 1788010071}
 --- !u!136 &891352583
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4531,6 +4532,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9117048973332523425, guid: e6d4cd8d76b3ce641866bef7b62d5abe, type: 3}
+--- !u!1 &1581156743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4499685242328804089, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+  m_PrefabInstance: {fileID: 4961954627594875416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1587040143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4866,7 +4872,6 @@ GameObject:
   - component: {fileID: 1788010070}
   - component: {fileID: 1788010072}
   - component: {fileID: 1788010071}
-  - component: {fileID: 1788010073}
   m_Layer: 5
   m_Name: Text3 - Apertura porta
   m_TagString: Untagged
@@ -4992,19 +4997,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788010069}
   m_CullTransparentMesh: 1
---- !u!114 &1788010073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788010069}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242206dcc6bb7456f9ba9b998631b52f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: {fileID: 0}
 --- !u!1 &1888537135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 7887da80634b68a4daf16149370eaf77, type: 3}
@@ -5866,6 +5858,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1179098964}
     m_Modifications:
     - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: settingsPanel
+      value: 
+      objectReference: {fileID: 1581156743}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
       propertyPath: mouseLookComponent
       value: 
       objectReference: {fileID: 1472459219}
@@ -5873,6 +5869,10 @@ PrefabInstance:
       propertyPath: playerMovementComponent
       value: 
       objectReference: {fileID: 1472459217}
+    - target: {fileID: 1082535147630447257, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1886875764585262621, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
       propertyPath: m_Name
       value: PauseMenu
