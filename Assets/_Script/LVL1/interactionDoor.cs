@@ -13,10 +13,10 @@ public class InteractionDoor : MonoBehaviour, IInteractable
     [SerializeField] private TextMeshProUGUI warningText;
     [SerializeField] private TextMeshProUGUI tomorrowText;
     
+    private Collider _collider;
+    private int _openingTriesCount;
     private bool _isPlayerInTrigger;
     private bool _canForceDoor =  true;
-    private int _openingTriesCount;
-    private Collider _collider;
     
 
     void Start()

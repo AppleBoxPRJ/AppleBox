@@ -1,4 +1,3 @@
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -11,8 +10,6 @@ public class PauseMenu : MonoBehaviour
     
     private bool _isPaused;
     
-    
-
     void OnEnable()
     {
         InputBindings.Instance.CancelAction.performed += OnEscapePressed;
@@ -20,7 +17,6 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
-        //OnEscapePressed();
         pauseMenuPanel.SetActive(false);
     }
 
@@ -34,10 +30,15 @@ public class PauseMenu : MonoBehaviour
         _isPaused = !_isPaused;
         
         Cursor.lockState = _isPaused ? CursorLockMode.None : CursorLockMode.Locked;
-        Cursor.visible = _isPaused;
-        pauseMenuPanel.SetActive(_isPaused);
         
-        suca(!_isPaused);
+        pauseMenuPanel.SetActive(_isPaused);
+        SetCursorAndMovementEnabled(!_isPaused);
+    }
+    
+    public void SetCursorAndMovementEnabled(bool isPaused)
+    {
+        mouseLookComponent.enabled = isPaused;
+        playerMovementComponent.enabled = isPaused;
     }
 
     public void Home()
@@ -53,12 +54,5 @@ public class PauseMenu : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-    }
-
-    public void suca(bool merda)
-    {
-        mouseLookComponent.enabled = merda;
-        playerMovementComponent.enabled = merda;
-        
     }
 }

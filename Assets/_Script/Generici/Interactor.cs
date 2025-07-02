@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -7,50 +8,83 @@ interface IInteractable
     public void Interact();
 }
 
+interface ILookable
+{
+    public void OnLook(bool isLooking);
+}
+
 public class Interactor : MonoBehaviour
 {
-    public Transform InteractionSource;
+    [Header("Interaction")]
+    [SerializeField] private Transform InteractionSource;
     [SerializeField] private float _interactionRange = 3f;
-
-    [Header("icons")] 
+    [Header("Icons")]
     [SerializeField] private Image _crosshair;
     [SerializeField] private Image _hand;
-    public static bool flag;
-    private Ray r;
 
-    private void OnEnable()
+    private Ray _ray;
+    private RaycastHit _hit;
+    private IInteractable _interactable;
+    private ILookable _lookable;
+    
+    private bool _isHitting;
+    private bool _canLook;
+    private bool _canInteract;
+
+    void OnEnable()
     {
         InputBindings.Instance.InteractAction.performed += ShootRaycast;
-        _hand.gameObject.SetActive(false);
-        
     }
 
-    void Update()
+    void Start()
     {
-        r = new Ray(InteractionSource.position, InteractionSource.forward);
-        if (Physics.Raycast(r, out RaycastHit hitInfo, _interactionRange) && hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactionObject))
+        _hand.gameObject.SetActive(false);
+    }
+
+    void FixedUpdate()
+    {
+        _ray = new Ray(InteractionSource.position, InteractionSource.forward);
+        _isHitting = Physics.Raycast(_ray, out _hit, _interactionRange);
+        
+        _canLook = false;
+        _canInteract = false;
+
+        if (_isHitting)
         {
-            _hand.gameObject.SetActive(true);
-            _crosshair.gameObject.SetActive(false);
+            if (_hit.collider.gameObject.TryGetComponent<ILookable>(out var l))
+            {
+                if (_hit.collider.gameObject == ((MonoBehaviour)l).gameObject)
+                {
+                    _lookable = l;
+                    _canLook = true;
+                }
+            }
+
+            if (_hit.collider.gameObject.TryGetComponent<IInteractable>(out var i))
+            {
+                if (_hit.collider.gameObject == ((MonoBehaviour)i).gameObject)
+                {
+                    _interactable = i;
+                    _canInteract = true;
+                }
+            }
         }
-        else
-        {
-            _hand.gameObject.SetActive(false);
-            _crosshair.gameObject.SetActive(true);
-        }
+
+        _lookable?.OnLook(_canLook);
+        
+        ShowHand(_canInteract);
     }
 
     private void ShootRaycast(InputAction.CallbackContext ctx)
     {
-        // Crea un ray che viaggia in avanti fino al massimo range
-            
-        if (Physics.Raycast(r, out RaycastHit hitInfo, _interactionRange))
-        {                
-            // Se collide, prova ad interagire con quello con cui ha colliso
-            if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactionObject))
-            {
-                interactionObject.Interact();
-            }
-        }
+        if (!_canInteract) return;
+        
+        _interactable.Interact();
+    }
+
+    private void ShowHand(bool show)
+    {
+        _hand.gameObject.SetActive(show);
+        _crosshair.gameObject.SetActive(!show);
     }
 }
