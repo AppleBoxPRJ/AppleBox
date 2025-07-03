@@ -4861,6 +4861,11 @@ MonoBehaviour:
   mouseLookComponent: {fileID: 1472459219}
   playerMovementComponent: {fileID: 1472459217}
   pauseMenuComponent: {fileID: 4961954627594875418}
+--- !u!1 &1787468188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 599963472277817690, guid: 7d999e5a88c3a4ff89369848999f1204, type: 3}
+  m_PrefabInstance: {fileID: 5219936685643765700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1788010069
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,6 +5863,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1179098964}
     m_Modifications:
     - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: HUDpanel
+      value: 
+      objectReference: {fileID: 35640842}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
       propertyPath: settingsPanel
       value: 
       objectReference: {fileID: 1581156743}
@@ -5869,6 +5878,38 @@ PrefabInstance:
       propertyPath: playerMovementComponent
       value: 
       objectReference: {fileID: 1472459217}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: HUDelementsList.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1764434412}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[1]'
+      value: 
+      objectReference: {fileID: 642893191}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[2]'
+      value: 
+      objectReference: {fileID: 518843752}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1788010069}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1787468188}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1056651766}
+    - target: {fileID: 796198543570105844, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
+      propertyPath: 'HUDelementsList.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1214836024}
     - target: {fileID: 1082535147630447257, guid: 1bf89e80964160b438a7b8cd0ab1ffb9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1

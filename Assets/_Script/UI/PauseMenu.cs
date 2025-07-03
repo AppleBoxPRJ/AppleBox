@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -7,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject pauseMenuPanel;
     [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private List<GameObject> HUDelementsList;
     [Header("Components")]
     [SerializeField] private MouseLook mouseLookComponent;
     [SerializeField] private PlayerMovement playerMovementComponent;
@@ -16,6 +18,7 @@ public class PauseMenu : MonoBehaviour
     void OnEnable()
     {
         InputBindings.Instance.CancelAction.performed += OnEscapePressed;
+        if (HUDelementsList.Count == 0); return;
     }
 
     void Start()
@@ -31,6 +34,11 @@ public class PauseMenu : MonoBehaviour
     private void OnEscapePressed()
     {
         _isPaused = !_isPaused;
+
+        foreach (GameObject obj in HUDelementsList)
+        {
+            obj.SetActive(!_isPaused);
+        }
         
         Cursor.lockState = _isPaused ? CursorLockMode.None : CursorLockMode.Locked;
         
@@ -39,6 +47,7 @@ public class PauseMenu : MonoBehaviour
             settingsPanel.SetActive(_isPaused);
         
         SetCursorAndMovementEnabled(!_isPaused);
+        
     }
     
     public void SetCursorAndMovementEnabled(bool isPaused)

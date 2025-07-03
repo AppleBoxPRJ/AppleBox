@@ -11,6 +11,8 @@ public class StartingMessage : MonoBehaviour
     void OnEnable()
     {
         InputBindings.Instance.InteractAction.performed += Destroy;
+        pauseMenuComponent.SetCursorAndMovementEnabled(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Start()

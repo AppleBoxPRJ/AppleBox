@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuPanel: {fileID: 9005269280803507792}
+  settingsPanel: {fileID: 4499685242328804089}
   mouseLookComponent: {fileID: 7533263093298498317, guid: 80cae6475919bab45811873158ce375f, type: 3}
   playerMovementComponent: {fileID: 3892266429305817052, guid: 80cae6475919bab45811873158ce375f, type: 3}
 --- !u!1 &2571283488556789626
