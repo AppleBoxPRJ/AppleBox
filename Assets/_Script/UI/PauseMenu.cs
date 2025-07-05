@@ -18,7 +18,6 @@ public class PauseMenu : MonoBehaviour
     void OnEnable()
     {
         InputBindings.Instance.CancelAction.performed += OnEscapePressed;
-        if (HUDelementsList.Count == 0); return;
     }
 
     void Start()

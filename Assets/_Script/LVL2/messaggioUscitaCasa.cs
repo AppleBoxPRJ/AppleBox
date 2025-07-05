@@ -3,12 +3,12 @@ using UnityEngine;
 public class MessaggioUscitaCasa : MonoBehaviour
 {
     [SerializeField] private GameObject messaggio;
-    [SerializeField] private GameObject portaChiusa;
+    [SerializeField] private OpenDoor porta;
 
     void Start()
     {
         messaggio.SetActive(false);
-        portaChiusa.SetActive(false);
+        porta.SetDoorMesh(true);
     }
 
     void OnTriggerEnter(Collider other)
@@ -21,7 +21,7 @@ public class MessaggioUscitaCasa : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         messaggio.SetActive(false);
-        portaChiusa.SetActive(true);
+        porta.SetDoorMesh(false);
         
         Destroy(gameObject);
     }

@@ -1,27 +1,12 @@
 using System;
-using TMPro;
 using UnityEngine;
-using UniRx;
 
 public class CassaCollezionista : MonoBehaviour, IInteractable, ILookable
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject appleCounter;
-    [SerializeField] private TextMeshProUGUI doorOpenedText;
 
-    private event Action<bool> OnLookEvt; 
-
-    void Start()
-    {
-        RuntimeData.Instance.applesDeliveredCount
-            .Where(x => x >= BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .First()
-            .Subscribe(_ =>
-            {
-                OnLookEvt += x => doorOpenedText.enabled = x;
-            })
-            .AddTo(this);
-    }
+    public event Action<bool> OnLookEvt; 
 
     public void Interact()
     {
