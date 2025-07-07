@@ -30,6 +30,7 @@ public class DoorMessages : MonoBehaviour, IInteractable
             case 3:
                 StartCoroutine(ShowMessage(tomorrowText));
                 door.SetDoorMesh(true);
+                enabled = false;
                 break;
         }
     }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UniRx;
 
@@ -14,14 +15,27 @@ public class OpenDoor : MonoBehaviour
         
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .Subscribe(_ => SetDoorMesh(true))
+            .Subscribe(_ =>
+            {
+                SetDoorMesh(true);
+                _collider.enabled = false;
+            })
             .AddTo(this);
+        
+        SetDoorMesh(true);
     }
     
     public void SetDoorMesh(bool open)
     {
         portaAperta.SetActive(open);
         portaChiusa.SetActive(!open);
-        _collider.enabled = !open;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (!(other.transform.position.x > transform.position.x)) return;
+        
+        SetDoorMesh(false);
+        _collider.enabled = false;
     }
 }
