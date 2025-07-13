@@ -9,6 +9,11 @@ public class MouseLook : MonoBehaviour
 
     private float pitch;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+    
     void Update()
     {
         _mouseSens = _settings.sens;

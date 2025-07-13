@@ -11,8 +11,6 @@ public class StartingMessage : MonoBehaviour
     void OnEnable()
     {
         InputBindings.Instance.InteractAction.performed += Destroy;
-        pauseMenuComponent.SetCursorAndMovementEnabled(false);
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Start()
@@ -25,6 +23,6 @@ public class StartingMessage : MonoBehaviour
     {
         pauseMenuComponent.SetCursorAndMovementEnabled(true);
         Destroy(gameObject);
-        InputBindings.Instance.InteractAction.performed  -= Destroy;
+        InputBindings.Instance.InteractAction.performed -= Destroy;
     }
 }
