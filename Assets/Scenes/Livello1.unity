@@ -4564,6 +4564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8255781750052987253}
   transitionTime: 4
+  hand: {fileID: 1056651766}
 --- !u!65 &1903308729
 BoxCollider:
   m_ObjectHideFlags: 0

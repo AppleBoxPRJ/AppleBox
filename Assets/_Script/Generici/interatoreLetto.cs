@@ -8,6 +8,7 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator animator;
     [SerializeField] private float transitionTime = 1.5f;
+    [SerializeField] private GameObject hand;
 
     private bool _playerInTrigger;
     
@@ -46,6 +47,7 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
     {
         Debug.Log("startCoroutine");
         animator.SetTrigger("start");
+        hand.SetActive(false);
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene("Livello" + levelIndex);
     }
