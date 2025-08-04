@@ -29,16 +29,16 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
     public void Interact()
     {
         if (!_playerInTrigger) return;
-    
+        
         if (RuntimeData.Instance.applesDeliveredCount.Value != 0)
         {
                 GameHandler.Plevel++;
                 PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel);
                 StartCoroutine(LoadLevel(GameHandler.Plevel));
         }
-        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2)
+        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2 && _playerInTrigger)
         {
-                SceneManager.LoadScene("Finale_Segreto1");
+            SceneManager.LoadScene("Finale_Segreto1");
         }
     }
 

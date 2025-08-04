@@ -18,10 +18,7 @@ public class DoorMessages : MonoBehaviour, IInteractable
     public void Interact()
     {
         if (!_canForceDoor) return;
-        
         _canForceDoor = false;
-        _openingTriesCount++;
-            
         switch (_openingTriesCount)
         {
             case < 3:
@@ -33,6 +30,7 @@ public class DoorMessages : MonoBehaviour, IInteractable
                 enabled = false;
                 break;
         }
+        _openingTriesCount++;
     }
 
     private IEnumerator ShowMessage(TextMeshProUGUI message)

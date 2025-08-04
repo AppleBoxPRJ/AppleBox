@@ -7,6 +7,8 @@ public class OpenDoor : MonoBehaviour
     [SerializeField] private GameObject portaChiusa;
     [SerializeField] private GameObject portaAperta;
     
+    [SerializeField] private bool doorParam;
+    
     private Collider _collider;
     
     void Start()
@@ -15,14 +17,12 @@ public class OpenDoor : MonoBehaviour
         
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .Subscribe(_ =>
-            {
-                SetDoorMesh(true);
+            .Subscribe(_ => { SetDoorMesh(doorParam);
                 _collider.enabled = false;
             })
             .AddTo(this);
         
-        SetDoorMesh(true);
+        SetDoorMesh(doorParam);
     }
     
     public void SetDoorMesh(bool open)

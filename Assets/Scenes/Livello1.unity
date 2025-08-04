@@ -5227,6 +5227,7 @@ MonoBehaviour:
   door: {fileID: 4831307346533519211}
   warningText: {fileID: 1585972011}
   tomorrowText: {fileID: 518539139}
+  messageScreenTime: 1.5
 --- !u!1001 &4961954627594875416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5643,6 +5644,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 334441690}
+    - target: {fileID: 7162330301165917111, guid: 6964b4b599f12451cb05cc53c4e0a206, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 4831307346533519211}
     - target: {fileID: 7162330301165917111, guid: 6964b4b599f12451cb05cc53c4e0a206, type: 3}
       propertyPath: doorOpenedText
       value: 
