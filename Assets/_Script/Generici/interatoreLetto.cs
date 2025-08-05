@@ -37,7 +37,7 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
                 PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel);
                 StartCoroutine(LoadLevel(GameHandler.Plevel));
         }
-        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2 && _playerInTrigger)
+        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel < 2 && _playerInTrigger)
         {
             SceneManager.LoadScene("Finale_Segreto1");
         }
