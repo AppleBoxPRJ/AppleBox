@@ -33,11 +33,6 @@ public class PauseMenu : MonoBehaviour
     private void OnEscapePressed()
     {
         _isPaused = !_isPaused;
-
-        foreach (GameObject obj in HUDelementsList)
-        {
-            obj.SetActive(!_isPaused);
-        }
         
         Cursor.lockState = _isPaused ? CursorLockMode.None : CursorLockMode.Locked;
         

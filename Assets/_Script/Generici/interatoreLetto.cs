@@ -8,6 +8,7 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
 {
     [SerializeField] private Animator animator;
     [SerializeField] private float transitionTime = 1.5f;
+    [SerializeField] private GameObject hand;
 
     private bool _playerInTrigger;
     
@@ -29,16 +30,16 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
     public void Interact()
     {
         if (!_playerInTrigger) return;
-    
+        
         if (RuntimeData.Instance.applesDeliveredCount.Value != 0)
         {
                 GameHandler.Plevel++;
                 PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel);
                 StartCoroutine(LoadLevel(GameHandler.Plevel));
         }
-        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2)
+        else if (RuntimeData.Instance.applesDeliveredCount.Value == 0 && GameHandler.Plevel <= 2 && _playerInTrigger)
         {
-                SceneManager.LoadScene("Finale_Segreto1");
+            SceneManager.LoadScene("Finale_Segreto1");
         }
     }
 
@@ -46,6 +47,7 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
     {
         Debug.Log("startCoroutine");
         animator.SetTrigger("start");
+        hand.SetActive(false);
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene("Livello" + levelIndex);
     }

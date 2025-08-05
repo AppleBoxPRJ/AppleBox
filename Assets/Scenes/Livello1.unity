@@ -4564,6 +4564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8255781750052987253}
   transitionTime: 4
+  hand: {fileID: 1056651766}
 --- !u!65 &1903308729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5644,6 +5645,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 334441690}
+    - target: {fileID: 7162330301165917111, guid: 6964b4b599f12451cb05cc53c4e0a206, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 4831307346533519211}
     - target: {fileID: 7162330301165917111, guid: 6964b4b599f12451cb05cc53c4e0a206, type: 3}
       propertyPath: doorOpenedText
       value: 
