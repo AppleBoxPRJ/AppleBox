@@ -8,7 +8,6 @@ public class PauseMenu : MonoBehaviour
     [Header("UI")]
     [SerializeField] private GameObject pauseMenuPanel;
     [SerializeField] private GameObject settingsPanel;
-    [SerializeField] private List<GameObject> HUDelementsList;
     [Header("Components")]
     [SerializeField] private MouseLook mouseLookComponent;
     [SerializeField] private PlayerMovement playerMovementComponent;
@@ -17,19 +16,14 @@ public class PauseMenu : MonoBehaviour
     
     void OnEnable()
     {
-        InputBindings.Instance.CancelAction.performed += OnEscapePressed;
+        InputBindings.Instance.CancelAction.performed += _ => OnEscapePressed();
     }
 
     void Start()
     {
         pauseMenuPanel.SetActive(false);
     }
-
-    private void OnEscapePressed(InputAction.CallbackContext context)
-    {
-        OnEscapePressed();
-    }
-
+    
     private void OnEscapePressed()
     {
         _isPaused = !_isPaused;
@@ -41,7 +35,6 @@ public class PauseMenu : MonoBehaviour
             settingsPanel.SetActive(_isPaused);
         
         SetCursorAndMovementEnabled(!_isPaused);
-        
     }
     
     public void SetCursorAndMovementEnabled(bool isPaused)
@@ -50,21 +43,21 @@ public class PauseMenu : MonoBehaviour
         playerMovementComponent.enabled = isPaused;
     }
 
-    
-    
+    #region ButtonsLogic
     // Logica bottoni
-    public void Home()
-    {
-        SceneManager.LoadScene(0);
-    }
-
-    public void Resume()
-    {
-        OnEscapePressed();
-    }
-
-    public void Exit()
-    {
-        Application.Quit();
-    }
+        public void Home()
+        {
+            SceneManager.LoadScene(0);
+        }
+    
+        public void Resume()
+        {
+            OnEscapePressed();
+        }
+    
+        public void Exit()
+        {
+            Application.Quit();
+        }
+    #endregion
 }
