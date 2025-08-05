@@ -862,7 +862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sar\xE0 per domani, oggi vado a dormire"
+  m_text: It'll have to wait until tomorrow. I'm going to sleep now.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
   m_sharedMaterial: {fileID: 2957279542665580790, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
@@ -4102,7 +4102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dovrei prima raccogliere le mele, poi posso andare a dormire
+  m_text: I should harvest the apples first, then I can go to sleep.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
   m_sharedMaterial: {fileID: 2957279542665580790, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Perfetto, tutte le mele sono a posto. Ora posso andare a dormire
+  m_text: Perfect, all the apples are taken care of. Now I can go to sleep.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
   m_sharedMaterial: {fileID: 2957279542665580790, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
