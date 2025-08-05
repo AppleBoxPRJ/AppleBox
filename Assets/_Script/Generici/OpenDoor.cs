@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UniRx;
 
@@ -29,13 +28,5 @@ public class OpenDoor : MonoBehaviour
     {
         portaAperta.SetActive(open);
         portaChiusa.SetActive(!open);
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (!(other.transform.position.x > transform.position.x)) return;
-        
-        SetDoorMesh(false);
-        _collider.enabled = false;
     }
 }
