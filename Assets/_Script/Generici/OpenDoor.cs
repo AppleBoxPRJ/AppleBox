@@ -16,7 +16,9 @@ public class OpenDoor : MonoBehaviour
         
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .Subscribe(_ => { SetDoorMesh(doorParam);
+            .Subscribe(_ =>
+            { 
+                SetDoorMesh(doorParam);
                 _collider.enabled = false;
             })
             .AddTo(this);

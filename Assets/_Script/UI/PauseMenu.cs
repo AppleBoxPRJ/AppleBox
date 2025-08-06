@@ -16,25 +16,32 @@ public class PauseMenu : MonoBehaviour
     
     void OnEnable()
     {
-        InputBindings.Instance.CancelAction.performed += _ => OnEscapePressed();
+        InputBindings.Instance.CancelAction.performed += OnEscape;
     }
 
     void Start()
     {
         pauseMenuPanel.SetActive(false);
     }
+
+    private void OnEscape(InputAction.CallbackContext context)
+    {
+        if (RuntimeData.Instance.pauseState.Value ==  PauseState.CannotPause) return;
+        SwitchPauseState();
+    }
     
-    private void OnEscapePressed()
+    private void SwitchPauseState()
     {
         _isPaused = !_isPaused;
         
         Cursor.lockState = _isPaused ? CursorLockMode.None : CursorLockMode.Locked;
+        RuntimeData.Instance.pauseState.Value = _isPaused ? PauseState.Paused : PauseState.CanPause;
+        
+        SetCursorAndMovementEnabled(!_isPaused);
         
         pauseMenuPanel.SetActive(_isPaused);
         if (!_isPaused)
             settingsPanel.SetActive(_isPaused);
-        
-        SetCursorAndMovementEnabled(!_isPaused);
     }
     
     public void SetCursorAndMovementEnabled(bool isPaused)
@@ -42,22 +49,23 @@ public class PauseMenu : MonoBehaviour
         mouseLookComponent.enabled = isPaused;
         playerMovementComponent.enabled = isPaused;
     }
-
+    
     #region ButtonsLogic
-    // Logica bottoni
-        public void Home()
-        {
-            SceneManager.LoadScene(0);
-        }
+
+    public void Home()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Resume()
+    {
+        SwitchPauseState();
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
     
-        public void Resume()
-        {
-            OnEscapePressed();
-        }
-    
-        public void Exit()
-        {
-            Application.Quit();
-        }
     #endregion
 }
