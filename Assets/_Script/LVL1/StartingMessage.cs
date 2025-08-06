@@ -17,11 +17,13 @@ public class StartingMessage : MonoBehaviour
     {
         pauseMenuComponent.SetCursorAndMovementEnabled(false);
         Cursor.lockState = CursorLockMode.Locked;
+        RuntimeData.Instance.pauseState.Value = PauseState.CannotPause;
     }
 
     private void Destroy(InputAction.CallbackContext ctx)
     {
         pauseMenuComponent.SetCursorAndMovementEnabled(true);
+        RuntimeData.Instance.pauseState.Value = PauseState.CanPause;
         Destroy(gameObject);
         InputBindings.Instance.InteractAction.performed -= Destroy;
     }
