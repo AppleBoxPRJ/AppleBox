@@ -2,22 +2,25 @@ using TMPro;
 using UnityEngine;
 using UniRx;
 
-public class OpenedDoorMessage : MonoBehaviour
+namespace LevelOne
 {
-    [Header("Message")]
-    [SerializeField] private CassaCollezionista cassa;
-    
-    void Start()
+    public class OpenedDoorMessage : MonoBehaviour
     {
-        var tmp = GetComponent<TextMeshProUGUI>();
+        [Header("Message")]
+        [SerializeField] private CassaCollezionista cassa;
         
-        RuntimeData.Instance.applesDeliveredCount
-            .Where(x => x >= BuildtimeData.Instance.LevelConfiguration.appleToCollect)
-            .First()
-            .Subscribe(_ =>
-            {
-                cassa.OnLookEvt += x => tmp.enabled = x;
-            })
-            .AddTo(this);   
+        void Start()
+        {
+            var tmp = GetComponent<TextMeshProUGUI>();
+            
+            RuntimeData.Instance.applesDeliveredCount
+                .Where(x => x >= BuildtimeData.Instance.LevelConfiguration.appleToCollect)
+                .First()
+                .Subscribe(_ =>
+                {
+                    cassa.OnLookEvt += x => tmp.enabled = x;
+                })
+                .AddTo(this);   
+        }
     }
 }

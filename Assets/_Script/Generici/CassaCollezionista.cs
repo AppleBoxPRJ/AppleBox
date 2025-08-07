@@ -17,11 +17,6 @@ public class CassaCollezionista : MonoBehaviour, IInteractable, ILookable
         RuntimeData.Instance.applesDeliveredCount.Value++;
         
         animator.SetTrigger("StartAnimation");
-
-        if (RuntimeData.Instance.applesDeliveredCount.Value == 5)
-        {
-            door.SetDoorMesh(true);
-        }
     }
 
     public void OnLook(bool isLooking)

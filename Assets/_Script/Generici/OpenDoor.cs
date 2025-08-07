@@ -3,10 +3,11 @@ using UniRx;
 
 public class OpenDoor : MonoBehaviour
 {
+    [SerializeField] private bool isDoorOpenedAtStart;
+    
+    [Header("Meshes")]
     [SerializeField] private GameObject portaChiusa;
     [SerializeField] private GameObject portaAperta;
-    
-    [SerializeField] private bool doorParam;
     
     private Collider _collider;
     
@@ -14,16 +15,16 @@ public class OpenDoor : MonoBehaviour
     {
         _collider = GetComponent<Collider>();
         
+        SetDoorMesh(isDoorOpenedAtStart);
+        
         RuntimeData.Instance.applesDeliveredCount
             .Where(x => x == BuildtimeData.Instance.LevelConfiguration.appleToCollect)
             .Subscribe(_ =>
             { 
-                SetDoorMesh(doorParam);
+                SetDoorMesh(true);
                 _collider.enabled = false;
             })
             .AddTo(this);
-        
-        SetDoorMesh(doorParam);
     }
     
     public void SetDoorMesh(bool open)

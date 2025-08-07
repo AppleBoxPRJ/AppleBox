@@ -863,6 +863,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 51588039079050419, guid: 2dc0457561ad444e2b2018ff8412ec09, type: 3}
+      propertyPath: isDoorOpenedAtStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1507518212937327840, guid: 2dc0457561ad444e2b2018ff8412ec09, type: 3}
       propertyPath: m_LocalPosition.x
       value: -166.888
