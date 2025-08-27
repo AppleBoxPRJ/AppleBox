@@ -31,12 +31,14 @@ public class SettingsScript : MonoBehaviour
     {
         musicVolume = musicVolumeSlider.value;
         gameMixer.SetFloat("musicVolume", Mathf.Log10(musicVolume) * 20); 
+        AudioManager.Instance.MusicVolume(musicVolume);
     }
     
     public void SetSFXVolume()
     {
         sFXVolume = SFXVolumeSlider.value;
         gameMixer.SetFloat("sfxVolume", Mathf.Log10(sFXVolume) * 20); 
+        AudioManager.Instance.SfxVolume(sFXVolume);
     }
 
     public void SetSens()
