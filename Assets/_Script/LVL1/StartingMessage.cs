@@ -14,7 +14,12 @@ namespace LevelOne
         {
             InputBindings.Instance.InteractAction.performed += Destroy;
         }
-    
+
+        private void OnDisable()
+        {
+            InputBindings.Instance.InteractAction.performed -= Destroy;
+        }
+
         void Start()
         {
             pauseMenuComponent.SetCursorAndMovementEnabled(false);

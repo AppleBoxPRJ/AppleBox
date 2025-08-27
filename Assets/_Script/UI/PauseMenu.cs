@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -17,6 +18,11 @@ public class PauseMenu : MonoBehaviour
     void OnEnable()
     {
         InputBindings.Instance.CancelAction.performed += OnEscape;
+    }
+
+    private void OnDisable()
+    {
+        InputBindings.Instance.CancelAction.performed -= OnEscape;
     }
 
     void Start()

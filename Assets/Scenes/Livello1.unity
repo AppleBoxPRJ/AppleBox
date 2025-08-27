@@ -4565,7 +4565,7 @@ MonoBehaviour:
   animator: {fileID: 8255781750052987253}
   transitionTime: 4
   hand: {fileID: 1056651766}
-  _inputActionAsset: {fileID: -944628639613478452, guid: 01c644d1a7af64036a1b90986ad38514, type: 3}
+  _inputActionAsset: {fileID: 8833154746997047729}
 --- !u!65 &1903308729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5940,6 +5940,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80cae6475919bab45811873158ce375f, type: 3}
+--- !u!114 &8833154746997047729 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4807202584289230762, guid: 80cae6475919bab45811873158ce375f, type: 3}
+  m_PrefabInstance: {fileID: 8833154746997047728}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

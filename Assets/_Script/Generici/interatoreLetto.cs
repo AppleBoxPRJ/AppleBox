@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -9,7 +10,6 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
     [SerializeField] private Animator animator;
     [SerializeField] private float transitionTime = 1.5f;
     [SerializeField] private GameObject hand;
-    [SerializeField] private InputActionAsset _inputActionAsset;
 
     private bool _playerInTrigger;
     
@@ -32,9 +32,8 @@ public class InteratoreLetto : MonoBehaviour, IInteractable
     {
         if (!_playerInTrigger) return;
         
-        if (RuntimeData.Instance.applesDeliveredCount.Value != 0)
+        if (RuntimeData.Instance.applesDeliveredCount.Value != 0 && _playerInTrigger)
         {
-                _inputActionAsset.Disable();
                 GameHandler.Plevel++;
                 PlayerPrefs.SetInt("PlayerLevel", GameHandler.Plevel);
                 StartCoroutine(LoadLevel(GameHandler.Plevel));

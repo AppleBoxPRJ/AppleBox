@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,14 +17,18 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 forward;
     private Vector3 right;
     
-    [SerializeField] private InputActionAsset _inputActionAsset;
 
 
     void OnEnable()
     {
         InputBindings.Instance.MoveAction.performed += Movements;
         InputBindings.Instance.MoveAction.canceled += Movements;
-        _inputActionAsset.Enable();
+    }
+
+    private void OnDisable()
+    {
+        InputBindings.Instance.MoveAction.performed -= Movements;
+        InputBindings.Instance.MoveAction.canceled -= Movements;
     }
 
     void Start()

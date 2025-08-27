@@ -36,6 +36,11 @@ public class Interactor : MonoBehaviour
         InputBindings.Instance.InteractAction.performed += ShootRaycast;
     }
 
+    private void OnDisable()
+    {
+        InputBindings.Instance.InteractAction.performed -= ShootRaycast;
+    }
+
     void Start()
     {
         _hand.gameObject.SetActive(false);
