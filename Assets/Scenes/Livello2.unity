@@ -454,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: character
       objectReference: {fileID: 0}
+    - target: {fileID: 3892266429305817052, guid: 80cae6475919bab45811873158ce375f, type: 3}
+      propertyPath: _inputActionAsset
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 01c644d1a7af64036a1b90986ad38514, type: 3}
     - target: {fileID: 4807202584289230762, guid: 80cae6475919bab45811873158ce375f, type: 3}
       propertyPath: m_UIInputModule
       value: 
@@ -4787,6 +4791,7 @@ MonoBehaviour:
   animator: {fileID: 507295092}
   transitionTime: 1.5
   hand: {fileID: 1554058333}
+  _inputActionAsset: {fileID: -944628639613478452, guid: 01c644d1a7af64036a1b90986ad38514, type: 3}
 --- !u!65 &1903308729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4806,8 +4811,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 27.77, y: 12.19, z: 20.44}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 20, y: 7.3, z: 11.5}
+  m_Center: {x: -2.16, y: 2.5, z: 0}
 --- !u!4 &1953567750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8964859838461161948, guid: 5153f168db9bb1a4e8c5f0ab4705b0f9, type: 3}

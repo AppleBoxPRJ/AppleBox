@@ -15,12 +15,15 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movementDirection;
     private Vector3 forward;
     private Vector3 right;
+    
+    [SerializeField] private InputActionAsset _inputActionAsset;
 
 
     void OnEnable()
     {
         InputBindings.Instance.MoveAction.performed += Movements;
         InputBindings.Instance.MoveAction.canceled += Movements;
+        _inputActionAsset.Enable();
     }
 
     void Start()

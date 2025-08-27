@@ -303936,6 +303936,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   transitionTime: 1.5
   hand: {fileID: 0}
+  _inputActionAsset: {fileID: 0}
 --- !u!65 &1903308729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -328495,6 +328496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: character
       objectReference: {fileID: 0}
+    - target: {fileID: 3892266429305817052, guid: 80cae6475919bab45811873158ce375f, type: 3}
+      propertyPath: _inputActionAsset
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 01c644d1a7af64036a1b90986ad38514, type: 3}
     - target: {fileID: 7533263093298498317, guid: 80cae6475919bab45811873158ce375f, type: 3}
       propertyPath: _settings
       value: 
