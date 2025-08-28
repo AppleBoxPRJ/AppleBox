@@ -8,10 +8,17 @@ public class TriggerAnimation : MonoBehaviour
     public Animator animator;
     public float transitionTime = 1.5f;
     public Animator playerAnimator;
+    
+    public static TriggerAnimation instance;
 
-    public void Awake()
+    public static TriggerAnimation GetInstance()
     {
-        //playerAnimator = GetComponent<Animator>();
+        return instance;
+    }
+
+    private void Awake()
+    {
+        instance = this;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,6 +33,7 @@ public class TriggerAnimation : MonoBehaviour
             if (playerAnimator != null)
             {
                 playerAnimator.enabled = true;
+                playerAnimator.SetBool("newtonApple", true);
                 //ChangeLevel();
                 //playerAnimator.enabled = false;
             }
