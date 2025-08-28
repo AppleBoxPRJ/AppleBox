@@ -2420,10 +2420,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: d572b132075512447b69d616dea04398, type: 3}
   - soundName: MainTheme2
     clip: {fileID: 8300000, guid: fb7c01192809adc458cb646de063e37f, type: 3}
+  - soundName: MainTheme3
+    clip: {fileID: 8300000, guid: b22e9798ff718cc4aa4579c62a96c734, type: 3}
   sfxSound: []
   musicSource: {fileID: 1047592899}
   sfxSource: {fileID: 671333117}
-  themeName: MainTheme
+  themeName: MainTheme3
 --- !u!1001 &2056256096
 PrefabInstance:
   m_ObjectHideFlags: 0
