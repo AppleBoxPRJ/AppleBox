@@ -50,7 +50,6 @@ public class TriggerAnimation : MonoBehaviour
         GameHandler.Plevel = GameHandler.Plevel + 1;
         Debug.Log(GameHandler.Plevel);
         int levelIndice = GameHandler.Plevel;
-        //SceneManager.LoadScene("Livello" + GameHandler.Plevel);
         StartCoroutine(loadLevel(levelIndice));
     }
     

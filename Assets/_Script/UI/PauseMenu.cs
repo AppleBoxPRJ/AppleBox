@@ -54,9 +54,14 @@ public class PauseMenu : MonoBehaviour
     public void SetCursorAndMovementEnabled(bool isPaused)
     {
         Debug.Log("la variabile è: " + isPaused);
-        
+        Debug.Log("mouselook: " + mouseLookComponent.enabled);
         mouseLookComponent.enabled = isPaused;
+        
+        Debug.Log("mouselook: " + mouseLookComponent.enabled);
+        Debug.Log("playerMovement: " + playerMovementComponent.enabled);
         playerMovementComponent.enabled = isPaused;
+        
+        Debug.Log("playerMovement: " + playerMovementComponent.enabled);
     }
     
     #region ButtonsLogic
