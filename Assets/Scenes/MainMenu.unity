@@ -1670,7 +1670,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2418,6 +2418,8 @@ MonoBehaviour:
   musicSound:
   - soundName: MainTheme
     clip: {fileID: 8300000, guid: d572b132075512447b69d616dea04398, type: 3}
+  - soundName: MainTheme2
+    clip: {fileID: 8300000, guid: fb7c01192809adc458cb646de063e37f, type: 3}
   sfxSound: []
   musicSource: {fileID: 1047592899}
   sfxSource: {fileID: 671333117}
