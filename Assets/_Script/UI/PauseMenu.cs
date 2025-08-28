@@ -40,6 +40,7 @@ public class PauseMenu : MonoBehaviour
     {
         _isPaused = !_isPaused;
         
+        
         Cursor.lockState = _isPaused ? CursorLockMode.None : CursorLockMode.Locked;
         RuntimeData.Instance.pauseState.Value = _isPaused ? PauseState.Paused : PauseState.CanPause;
         
@@ -52,6 +53,8 @@ public class PauseMenu : MonoBehaviour
     
     public void SetCursorAndMovementEnabled(bool isPaused)
     {
+        Debug.Log("la variabile è: " + isPaused);
+        
         mouseLookComponent.enabled = isPaused;
         playerMovementComponent.enabled = isPaused;
     }

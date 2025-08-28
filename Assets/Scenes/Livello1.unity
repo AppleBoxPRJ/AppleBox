@@ -3906,8 +3906,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oh no! Qualcuno ha rovesciato le mie mele. Prima di andare a dormire dovrei
-    raccoglierle\n\t\t\t\t\t\t\t\t\t\tPremi E per andare avanti"
+  m_text: "Oh no! Someone knocked over all my apples. I should harvest them before
+    I go to bed\n\t\t\t\t\t\t\t\t\t\tPress E to continue"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
   m_sharedMaterial: {fileID: 2957279542665580790, guid: bb95a6791ee543b42a8553447ed21c6a, type: 2}
@@ -4565,7 +4565,6 @@ MonoBehaviour:
   animator: {fileID: 8255781750052987253}
   transitionTime: 4
   hand: {fileID: 1056651766}
-  _inputActionAsset: {fileID: 8833154746997047729}
 --- !u!65 &1903308729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5940,17 +5939,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80cae6475919bab45811873158ce375f, type: 3}
---- !u!114 &8833154746997047729 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4807202584289230762, guid: 80cae6475919bab45811873158ce375f, type: 3}
-  m_PrefabInstance: {fileID: 8833154746997047728}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

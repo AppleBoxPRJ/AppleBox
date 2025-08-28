@@ -6,7 +6,7 @@ namespace LevelThree
     public class Door : MonoBehaviour
     {
         [Header("Messages")]
-        //[SerializeField] private TextMeshProUGUI firstMessage;
+        [SerializeField] private TextMeshProUGUI frase;
         //[SerializeField] private TextMeshProUGUI secondMessage;
     
         private OpenDoor _door;
@@ -22,13 +22,13 @@ namespace LevelThree
         {
             if (!other.CompareTag("Player")) return;
         
-            //firstMessage.enabled = true;
+            frase.gameObject.SetActive(true);
         }
     
         void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag("Player")) return;
-            //firstMessage.enabled = false;
+            frase.gameObject.SetActive(false);
         
             if (!(other.transform.position.x > transform.position.x)) return;
             _door.SetDoorMesh(false);
