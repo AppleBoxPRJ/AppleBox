@@ -19,7 +19,7 @@ public class totallyLostScript : MonoBehaviour
         
     }
 
-    public void onDisable()
+    public void stopAnimation()
     {
         lost.SetBool("lost", false);
     }
