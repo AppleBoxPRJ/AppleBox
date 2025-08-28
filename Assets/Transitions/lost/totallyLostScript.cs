@@ -19,6 +19,12 @@ public class totallyLostScript : MonoBehaviour
         
     }
 
+    public void UnockCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void stopAnimation()
     {
         lost.SetBool("lost", false);
