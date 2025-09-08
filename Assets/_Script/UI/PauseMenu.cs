@@ -39,10 +39,10 @@ public class PauseMenu : MonoBehaviour
     private void SwitchPauseState()
     {
         _isPaused = !_isPaused;
-        
-        
         Cursor.lockState = _isPaused ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = _isPaused;
         RuntimeData.Instance.pauseState.Value = _isPaused ? PauseState.Paused : PauseState.CanPause;
+        clickSimulator.SimulateLeftClick();
         
         SetCursorAndMovementEnabled(!_isPaused);
         
