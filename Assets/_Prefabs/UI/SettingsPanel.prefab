@@ -781,6 +781,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: MouseSenseSlider
       objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5299987435756672633}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSens
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7362301425992775115, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -906,6 +934,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioVolumeSlider
       objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5299987435756672633}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMusicVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7362301425992775115, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1030,6 +1086,34 @@ PrefabInstance:
     - target: {fileID: 5910852688112632812, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
       propertyPath: m_Name
       value: SFXVolumeSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5299987435756672633}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSFXVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsScript, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6577729994670629241, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7362301425992775115, guid: 0b5168d61d18d48f28958564993540ed, type: 3}
       propertyPath: m_Pivot.x

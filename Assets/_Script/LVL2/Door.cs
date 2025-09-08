@@ -21,7 +21,7 @@ namespace LevelTwo
         void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player")) return;
-        
+            AudioManager.Instance.PlaySFX("Breathe");
             firstMessage.enabled = true;
         }
     
