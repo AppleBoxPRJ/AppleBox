@@ -45,9 +45,4 @@ public class SettingsScript : MonoBehaviour
     {
         sens = sensSlider.value;
     }
-
-    //public void SetResolution(int index)
-    //{
-    //    QualitySettings.SetQualityLevel(index);
-    //}
 }
