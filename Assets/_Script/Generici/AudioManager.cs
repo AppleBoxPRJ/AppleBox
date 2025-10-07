@@ -69,7 +69,7 @@ public class AudioManager : MonoBehaviour
    
 }
 
-[System.Serializable]
+[Serializable]
 public class Sound
 {
    public string soundName;

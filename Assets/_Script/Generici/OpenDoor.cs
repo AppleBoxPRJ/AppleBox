@@ -29,6 +29,14 @@ public class OpenDoor : MonoBehaviour
     
     public void SetDoorMesh(bool open)
     {
+        if (open)
+        {
+            AudioManager.Instance.PlaySFX("OpenDoor"); 
+        }
+        else
+        {
+            AudioManager.Instance.PlaySFX("CloseDoor");
+        }
         portaAperta.SetActive(open);
         portaChiusa.SetActive(!open);
     }

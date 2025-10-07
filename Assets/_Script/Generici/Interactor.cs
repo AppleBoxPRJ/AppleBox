@@ -30,6 +30,8 @@ public class Interactor : MonoBehaviour
     private bool _isHitting;
     private bool _canLook;
     private bool _canInteract;
+    
+    
 
     void OnEnable()
     {

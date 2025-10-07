@@ -1119,11 +1119,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4307951954138056190, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: Loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4307951954138056190, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: m_PlayOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7242180275174483801, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: m_Name
@@ -1135,7 +1135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: sfxSound.Array.size
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: musicSound.Array.size
@@ -1146,12 +1146,60 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 272be0516c8f3ac4ea82b76eb04dc42e, type: 3}
     - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 034f0c3bab40ad14a834f58245c3ae89, type: 3}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 43a2854d38a6e4d459ce49eb1b29d2ed, type: 3}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e309ece3facbc33448d7b6c1a8fbf478, type: 3}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 517ae8710f9d013438a0007542d02135, type: 3}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 37cbf9aac83fae24594033bc431e44a9, type: 3}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ec93bf15be9332b4ea656a0481750eb0, type: 3}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: musicSound.Array.data[0].clip
       value: 
       objectReference: {fileID: 8300000, guid: 644b9c72a1e2a774891ea1a28ebd9015, type: 3}
     - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: sfxSound.Array.data[0].soundName
       value: sfx
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[1].soundName
+      value: crowd
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[2].soundName
+      value: voices
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[3].soundName
+      value: step
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[4].soundName
+      value: step1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[5].soundName
+      value: CloseDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
+      propertyPath: sfxSound.Array.data[6].soundName
+      value: OpenDoor
       objectReference: {fileID: 0}
     - target: {fileID: 7778104524821378450, guid: bc47204c605b84142b355bf7fafe63b5, type: 3}
       propertyPath: musicSound.Array.data[0].soundName
