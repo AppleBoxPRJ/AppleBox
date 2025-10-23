@@ -2,7 +2,7 @@
 using System;
 using UnityEngine;
 
-namespace generic
+namespace lvl4
 {
    public class CassaCollezionista : MonoBehaviour, IInteractable, ILookable
    {
@@ -20,6 +20,11 @@ namespace generic
            RuntimeData.Instance.applesDeliveredCount.Value++;
            
            animator?.SetTrigger("StartAnimation");
+
+           if (RuntimeData.Instance.applesDeliveredCount.Value == 6)
+           {
+               Debug.Log("limbs Delivered");
+           }
        }
    
        public void OnLook(bool isLooking)

@@ -7,7 +7,7 @@ namespace LevelOne
     public class OpenedDoorMessage : MonoBehaviour
     {
         [Header("Message")]
-        [SerializeField] private CassaCollezionista cassa;
+        [SerializeField] private generic.CassaCollezionista cassa;
         
         void Start()
         {

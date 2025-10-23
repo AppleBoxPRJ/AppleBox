@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level4
   m_EditorClassIdentifier: 
   levelId: 4
-  appleToSpawn: 10
-  appleToCollect: 8
+  appleToSpawn: 0
+  appleToCollect: 6
   appleSpawnRange: {x: -37, y: 67}
