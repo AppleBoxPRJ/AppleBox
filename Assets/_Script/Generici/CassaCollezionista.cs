@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class CassaCollezionista : MonoBehaviour, IInteractable, ILookable
+namespace generic
 {
     [SerializeField] private Animator animator;
     [SerializeField] private GameObject appleCounter;

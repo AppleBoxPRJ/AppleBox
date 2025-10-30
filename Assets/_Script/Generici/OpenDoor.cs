@@ -4,6 +4,7 @@ using UniRx;
 public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private bool isDoorOpenedAtStart;
+    [SerializeField] private bool isDoorAlwaysOpened;
     
     [Header("Meshes")]
     [SerializeField] private GameObject portaChiusa;
@@ -29,9 +30,25 @@ public class OpenDoor : MonoBehaviour
     
     public void SetDoorMesh(bool isOpen)
     {
-        AudioManager.Instance.PlaySFX(isOpen ? "OpenDoor" : "CloseDoor");
-        
-        portaAperta.SetActive(isOpen);
-        portaChiusa.SetActive(!isOpen);
+        if (open)
+        {
+            AudioManager.Instance.PlaySFX("OpenDoor"); 
+        }
+        else
+        {
+            AudioManager.Instance.PlaySFX("CloseDoor");
+        }
+
+        if (isDoorAlwaysOpened)
+        {
+            portaChiusa.SetActive(false);
+            portaAperta.SetActive(true);
+        }
+        else
+        {
+            portaAperta.SetActive(open);
+            portaChiusa.SetActive(!open);
+        }
+
     }
 }
