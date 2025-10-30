@@ -30,7 +30,7 @@ public class OpenDoor : MonoBehaviour
     
     public void SetDoorMesh(bool isOpen)
     {
-        if (open)
+        if (isOpen)
         {
             AudioManager.Instance.PlaySFX("OpenDoor"); 
         }
@@ -46,8 +46,8 @@ public class OpenDoor : MonoBehaviour
         }
         else
         {
-            portaAperta.SetActive(open);
-            portaChiusa.SetActive(!open);
+            portaAperta.SetActive(isOpen);
+            portaChiusa.SetActive(!isOpen);
         }
 
     }
